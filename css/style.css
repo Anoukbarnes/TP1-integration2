@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    margin:0 2%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img{
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.nav__item {
+    display: inline-block;
+    margin: 0 0.7em;
+    font-size: 1.2em;
+
+}
+
+.nav__btn {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: grey;
+    }
+}
+
+.nav__item--active {
+    color: green;
+}
