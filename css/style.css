@@ -90,3 +90,13 @@ header {
 .card__img {
     width: 30%
 }
+
+/* -------------------------------- */
+/* ---------- SECT 3 GRID---------- */
+/* -------------------------------- */
+
+.grid__title {
+    text-align: center;
+    padding-top: 2.5em;
+    font-size: 2.3rem;
+}
