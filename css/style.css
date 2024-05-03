@@ -73,3 +73,20 @@ header {
     padding-top: 2.5em;
     font-size: 2.3rem;
 }
+
+.flex-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: justify;
+    align-items: center;
+}
+
+.card__img {
+    width: 30%
+}
