@@ -158,7 +158,7 @@ header {
 
 .graph__title {
     text-align: center;
-    padding-top: 2.5em;
+    padding-top: 5em;
     font-size: 2.3rem;
     padding-bottom: 1.5em;
 }
@@ -169,7 +169,7 @@ header {
 }
 
 .graph__img {
-    padding-top: 5%;
+    padding-top: 12%;
 }
 
 .graph__right {
@@ -196,9 +196,54 @@ header {
 /* ------ SECT 5 TEAM CARDS ------- */
 /* -------------------------------- */
 
+.cards {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-card {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+}
+
 .team-section__title{
     text-align: center;
-    padding-top: 2.5em;
+    padding-top: 5em;
     font-size: 2.3rem;
     padding-bottom: 1.5em;
 }
+
+.team-card__img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.team-card__title{
+    font-size: 1em;
+    margin: 1em 0 0 0;
+}
+
+.team-card__role {
+    margin: 0;
+}
+
+.team-card__text {
+    text-align: justify;
+}
+
+.img-center {
+    display: inline-block;
+    text-align: center;
+}
+
+/* -------------------------------- */
+/* ---------- SECT 6 MAP ---------- */
+/* -------------------------------- */
+
+
+
+/* -------------------------------- */
+/* ---------- SECT 6 FOM ---------- */
+/* -------------------------------- */
