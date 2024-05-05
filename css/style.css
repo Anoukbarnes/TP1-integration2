@@ -56,38 +56,43 @@ header {
 
 
 /* -------------------------------- */
-/* -------- SECT 2 CARDS ---------- */
+/* ----- SECT 2 SERVICE CARDS ----- */
 /* -------------------------------- */
 
-.info-card__title {
-    text-align: center;
-}
-
-.info-card__text {
-    text-align: center;
-    padding-bottom: 1em;
-}
-
-.info-card__title {
+.service-section__title {
     text-align: center;
     padding-top: 2.5em;
     font-size: 2.3rem;
 }
 
-.flex-card {
+.service-section__text {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.flex-service {
     display: flex;
     justify-content: space-around;
 }
 
-.card {
+.service-card {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    text-align: justify;
+    width: 21.5%;
     align-items: center;
 }
 
-.card__img {
+.service-card__title {
+    text-align: center;
+}
+
+.service-card__text {
+    text-align: center;
+    padding-bottom: 1em;
+    text-align: justify;
+}
+
+.service-card__img {
     width: 30%
 }
 
@@ -95,11 +100,57 @@ header {
 /* ---------- SECT 3 GRID---------- */
 /* -------------------------------- */
 
-.grid__title {
+.partner-section__title {
     text-align: center;
     padding-top: 2.5em;
     font-size: 2.3rem;
 }
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 1em 22% 1.5em 22%;
+    gap: 1.5em;
+    width: 100%;
+}
+
+.grid__item-1{
+    grid-row: 2/4;
+    grid-column: 1/3;
+}
+
+.grid__item-2{
+    grid-row: 1/3;
+    grid-column: 3/7;  
+}
+
+.grid__item-3 {
+    grid-row: 3/4;
+    grid-column: 3/5;   
+}
+
+.grid__item-4 {
+    grid-row: 3/5;
+    grid-column: 5/9;  
+}
+
+.grid__item-5{
+    grid-row: 2/3;
+    grid-column: 7/9;   
+}
+
+.grid__item-6{
+    grid-row: 2/4;
+    grid-column: 9/10;
+}
+
+
 
 /* -------------------------------- */
 /* ---------- SECT 4 GRAPH--------- */
@@ -117,6 +168,10 @@ header {
     justify-content: space-around;
 }
 
+.graph__img {
+    padding-top: 5%;
+}
+
 .graph__right {
     display: flex;
     flex-direction: column;
@@ -124,9 +179,26 @@ header {
     width: 40%;
 }
 
+.graph__text {
+    width:80%;
+    text-align: center;
+    padding-bottom: 8%;
+}
+
 .graph__btn {
     text-decoration: none;
     color: black;
     background-color: rgb(58, 154, 209);
     padding: 12px;
+}
+
+/* -------------------------------- */
+/* ------ SECT 5 TEAM CARDS ------- */
+/* -------------------------------- */
+
+.team-section__title{
+    text-align: center;
+    padding-top: 2.5em;
+    font-size: 2.3rem;
+    padding-bottom: 1.5em;
 }

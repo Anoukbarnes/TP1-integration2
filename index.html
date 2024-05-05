@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Both DevOps</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
@@ -23,10 +23,10 @@
     <h1 class="logo"><a href="#section-1"><img class="logo__img" src="img/logo.png" alt="logo"></a></h1>
     <nav class="nav">
         <ul>
-            <li class="nav__item nav__item--active"><a href="#section-1"></a>Nos services</a></li>
-            <li class="nav__item"><a class="nav__btn" href="#section-2">Nos partenaires</a></li>
-            <li class="nav__item"><a class="nav__btn" href="#section-3">Statistiques</a></li>
-            <li class="nav__item"><a class="nav__btn" href="#section-4">Nous joindre</a></li>
+            <li class="nav__item nav__item--active"><a href="#services-section"></a>Nos services</a></li>
+            <li class="nav__item"><a class="nav__btn" href="#partners-section">Nos partenaires</a></li>
+            <li class="nav__item"><a class="nav__btn" href="#stats-section">Statistiques</a></li>
+            <li class="nav__item"><a class="nav__btn" href="#map-section">Nous joindre</a></li>
         </ul>
     </nav>
 </header>
@@ -38,47 +38,67 @@
         <img class= "container banner-img" src="img/banner-img.jpg" alt="Image pièce intérieur ordinateur">
     </section>
 
-    <section id="section-2">
-        <h2 class="info-card__title">Nos services</h2>
+    <section id="service-section">
+        <h2 class="service-section__title">Nos services</h2>
 
-        <div class="info-card__text">
-            <p>Informations sur la compagnie</p>
+        <div>
+            <p class="service-section__text">Informations sur la compagnie</p>
         </div>
 
-        <div class="flex-card">
-            <div class="card">
-                <img class="card__img" src="img/soutien.png" alt="icone de serveur informatique">
-                <h3 class="card__title">Support technique</h3>
-                <p class="card__text">Chez Solutions TI, nous sommes votre guichet unique pour tous vos besoins en matière de support technique. Notre équipe d'experts certifiés est disponible 24h/24 et 7j/7 pour vous aider à résoudre tous vos problèmes informatiques, que ce soit à distance ou sur place. Laissez-nous vous simplifier la vie et vous concentrer sur ce qui compte vraiment.</p>
+        <div class="flex-service">
+            <div class="service-card">
+                <img class="service-card__img" src="img/soutien.png" alt="icone de serveur informatique">
+                <h3 class="service-card__title">Architecture de systèmes</h3>
+                <p class="service-card__text">Chez Solutions TI, nous sommes votre guichet unique pour tous vos besoins en matière de support technique. Notre équipe d'experts certifiés est disponible 24h/24 et 7j/7 pour vous aider à résoudre tous vos problèmes informatiques, que ce soit à distance ou sur place. Laissez-nous vous simplifier la vie et vous concentrer sur ce qui compte vraiment.</p>
             </div>
 
-            <div class="card">
-                <img class="card__img" src="img/optimisation.png" alt="écran d'ordinateur et cloud">
-                <h3 class="card__title">Optimisation de stockage</h3>
-                <p class="card__text">Maîtrisez vos données et optimisez votre stockage avec nos solutions sur mesure. Nous analysons vos besoins et mettons en place des stratégies d'archivage, de compression et de déduplication pour maximiser l'utilisation de votre espace de stockage et réduire vos coûts. Laissez-nous vous aider à gérer vos données de manière efficace et économique.</p>
+            <div class="service-card">
+                <img class="service-card__img" src="img/optimisation.png" alt="écran d'ordinateur et cloud">
+                <h3 class="service-card__title">Ingénierie des données</h3>
+                <p class="service-card__text">Maîtrisez vos données et optimisez votre stockage avec nos solutions sur mesure. Nous analysons vos besoins et mettons en place des stratégies d'archivage, de compression et de déduplication pour maximiser l'utilisation de votre espace de stockage et réduire vos coûts. Laissez-nous vous aider à gérer vos données de manière efficace et économique.</p>
             </div>
 
-            <div class="card">
-                <img class="card__img" src="img/migration.png" alt="écran d'ordinateur avec documents">
-                <h3 class="card__title">Migration de données</h3>
-                <p class="card__text">En tant que spécialiste de la migration de données, nous vous accompagnons dans le transfert sécurisé et efficace de vos données vers de nouveaux systèmes ou plateformes. Notre expertise garantit l'intégrité et la disponibilité de vos informations tout au long du processus. Laissez-nous vous guider vers une migration réussie et sans tracas.</p>
+            <div class="service-card">
+                <img class="service-card__img" src="img/migration.png" alt="écran d'ordinateur avec documents">
+                <h3 class="service-card__title">Développement et intégration de solutions cloud </h3>
+                <p class="service-card__text">En tant que spécialiste de la migration de données, nous vous accompagnons dans le transfert sécurisé et efficace de vos données vers de nouveaux systèmes ou plateformes. Notre expertise garantit l'intégrité et la disponibilité de vos informations tout au long du processus. Laissez-nous vous guider vers une migration réussie et sans tracas.</p>
             </div>
         </div>
     </section>
 
-    <section id="section-3">
+    <section id="partner-section">
+        <h1 class="partner-section__title"> Nos partenaires</h1>
+
         <div class="grid">
-            <h1 class="grid__title"> Merci à nos partenaires</h1>
+            <img class="grid__item-1" src="img/logo-databricks.svg" alt="Logo de la compagnie Databricks ">
+            <img class="grid__item-2" src="img/logo-cisco.png" alt="Logo de la compagnie cisco">
+            <img class="grid__item-3" src="img/logo-ubunti.svg" alt="Logo de la compagnie ubunti">
+            <img class="grid__item-4" src="img/azure-logo.png" alt="Logo de la compagnie microsoft azure">
+            <img class="grid__item-5" src="img/logo-langchain.png" alt="Logo de la compagnie langchain">
+            <img class="grid__item-6" src="img/logo-google.svg" alt="Logo de la compagnie google services">
+          
+        </div>
+    
+    </section>
+
+    <section id="stats-section">
+        <div class="graph">
+            <div class="graph__img">
+                <img alt="graphique circulaire des services" src="img/graph.png">
+            </div>
+            <div class="graph__right">
+                <h1 class="graph__title">L'étendu de nos services</h1>
+                <p class="graph__text"> Voici l'étendu de nos services basé sur des services offert aux entreprises par le passé. </p>
+                <a class="graph__btn" href="#"> En savoir plus</a>
+            </div>
         </div>
     </section>
 
-    <section id="section-4">
-        <div class="graph">
-            <h1 class="graph__title">L'étendu de nos services</h1>
-            <img class="graph__img" alt="graphique circulaire des services" src="img/graph.png">
-            <p class="graph__text"> Voici l'étendu de nos services basé sur des services offert aux entreprises par le passé. </p>
-            <a class="graph__btn" href="#"> En savoir plus</a>
-        </div>
+    <section id="team-section">
+    </section>
+
+    <section id="map-section">
+        
     </section>
 
 </main>
