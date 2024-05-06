@@ -10,6 +10,7 @@
 
 body {
     margin:0 2%;
+    background-color: rgb(236, 236, 233);
 }
 
 header {
@@ -82,6 +83,7 @@ header {
     align-items: center;
 }
 
+
 .service-card__title {
     text-align: center;
 }
@@ -92,8 +94,31 @@ header {
     text-align: justify;
 }
 
-.service-card__img {
-    width: 30%
+.service-card__img-1 {
+    width: 25%;
+    background-color: rgb(227, 225, 119);
+    padding: 0.5em;
+    border:2px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.service-card__img-2 {
+    width: 25%;
+    background-color: rgb(151, 218, 122);
+    padding: 0.5em;
+    border: 2px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.service-card__img-3 {
+    width: 25%;
+    background-color: rgb(213, 133, 236);
+    padding: 0.5em;
+    border: 2px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
 }
 
 /* -------------------------------- */
@@ -109,7 +134,6 @@ header {
 .grid img{
     width: 100%;
     height: 100%;
-    border: 2px solid black;
 }
 
 .grid {
@@ -242,7 +266,11 @@ header {
 /* ---------- SECT 6 MAP ---------- */
 /* -------------------------------- */
 
-
+.map-section__iframe {
+    padding-top: 5em;
+    padding-bottom: 1.5em;
+    width: 100%;
+}
 
 /* -------------------------------- */
 /* ---------- SECT 6 FOM ---------- */
