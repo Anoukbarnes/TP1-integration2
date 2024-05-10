@@ -42,7 +42,7 @@ header {
 }
 
 .nav__item--active {
-    color: green;
+    color: rgb(243, 130, 124);
 }
 
 
@@ -140,7 +140,7 @@ header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     gap: 1.5em;
     width: 100%;
 }
