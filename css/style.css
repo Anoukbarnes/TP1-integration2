@@ -9,7 +9,7 @@
 }
 
 body {
-    margin:0 2%;
+    margin: 0 auto;
     background-color: rgb(236, 236, 233);
 }
 
@@ -17,6 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 1em;
 }
 
 .logo__img{
@@ -29,7 +30,6 @@ header {
     display: inline-block;
     margin: 0 0.7em;
     font-size: 1.2em;
-
 }
 
 .nav__btn {
@@ -46,8 +46,10 @@ header {
 }
 
 .container {
-    margin: 0 5% 0 5%;
+    margin: 0 auto;
+    max-width: 1400px;
 }
+
 
 
 /* -------------------------------- */
@@ -141,6 +143,8 @@ header {
     grid-template-columns: repeat(11, 1fr);
     gap: 1.5em;
     width: 100%;
+    justify-content: center;
+    padding-top: 10%;
 }
 
 .grid__item-1{
@@ -281,10 +285,11 @@ header {
 .form {
     position: relative;
     margin-top: 15%;
-    background-color: rgba(142, 213, 149, 0.882);
+    background-color: whitesmoke;
     padding: 2em;
     border-radius: 5%;
     width: 40%;
+    border: solid 3px rgb(243, 130, 124);
 }
 
 .form__flex{
@@ -298,6 +303,62 @@ header {
     width: 90%;
 }
 
-span {
+.form__span {
     padding-left: 0.8em;
+}
+
+.form__btn {
+    text-decoration: none;
+    color: black;
+    background-color:rgb(243, 130, 124);
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 5%;
+}
+
+
+/* -------------------------------- */
+/* ---------- FOOTER -------------- */
+/* -------------------------------- */
+.footer-img {
+    display: flex;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-nav__items {
+    display: inline-block;
+}
+
+.footer__btn {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: grey;
+    }
+}
+
+.credits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.credits__info {
+    display: flex;
+    align-items: center;
+}
+
+.credits__span{
+    padding: 1em;
 }

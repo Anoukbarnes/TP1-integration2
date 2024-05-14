@@ -47,7 +47,7 @@
             <p class="service-section__text">Informations sur la compagnie</p>
         </div>
 
-        <div class="flex-service">
+        <div class="flex-service container">
             <div class="service-card">
                 <img class="service-card__img-1" src="img/architecture.png" alt="icone d'un écran d'ordinateur et engrenage">
                 <h3 class="service-card__title">Architecture de systèmes</h3>
@@ -68,9 +68,9 @@
         </div>
     </section>
 
-    <section class="container" id="partner-section">
+    <section id="partner-section">
 
-        <div class="grid">
+        <div class="container grid">
             <img class="grid__item-1 grid__img" src="img/grid-1.jpg" alt="Image d'un écran d'ordinateur avec code informatique ">
             <img class="grid__item-2 grid__img" src="img/grid-2.jpg" alt="Image fils d'une salle de serveurs informatiques">
             <img class="grid__item-3 grid__img" src="img/grid-3.jpg" alt="Image salle de serveurs informatiques">
@@ -158,20 +158,20 @@
     </section>
 
     <section id="map-section">
-        <iframe class="map-section__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.0081089331047!2d-73.57525796110733!3d45.54999929276892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bfc289ec2fd%3A0xa7740a80a53c0b9a!2s3163%20Rue%20Masson%2C%20Montr%C3%A9al%2C%20QC%20H1Y%201Y2!5e0!3m2!1sfr!2sca!4v1714949199122!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map-section__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.0081089331047!2d-73.57525796110733!3d45.54999929276892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bfc289ec2fd%3A0xa7740a80a53c0b9a!2s3163%20Rue%20Masson%2C%20Montr%C3%A9al%2C%20QC%20H1Y%201Y2!5e0!3m2!1sfr!2sca!4v1714949199122!5m2!1sfr!2sca" width="100%" height="700px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section class="container form__flex">
         <form class="form">
-            <label class= "form__label" for="first-name">Votre prénom</label><span>*</span>
+            <label class= "form__label" for="first-name">Votre prénom</label><span class="form__span">*</span>
                 <div>
                     <input class= "form__input" type="text" id="first-name" name="first-name" placeholder="Prénom" required>
                 </div>
-            <label class= "form__label" for="first-name">Votre nom</label><span>*</span>
+            <label class= "form__label" for="first-name">Votre nom</label><span class="form__span">*</span>
                 <div>
                     <input class= "form__input" type="text" id="last-name" name="last-name" placeholder="Nom" required>
                 </div>
-            <label class= "form__label" for="mail-client">Votre courriel</label><span>*</span>
+            <label class= "form__label" for="mail-client">Votre courriel</label><span class="form__span">*</span>
                 <div> 
                     <input class= "form__input" type="email" id="mail-client" name="mail-client" placeholder="xyz@mail.com" required>
                  </div>
@@ -179,12 +179,47 @@
                 <div>
                     <textarea class= "form__input" id="txt-info" name="txt-info" placeholder="Message"></textarea>
                 </div> 
+
+                <div>
+                    <input class="form__btn" href="#" type="submit" id= "btn-form" value="Envoyer">
+                </div>
         </form>
     </section>
 
 </main>
 
-<footer>
+<footer class="container">
+    <div>
+        <img class="footer-img" src="img/polarka-logo.png" alt="logo de la compagnie Polarka">
+    </div>
+
+    <div>
+        <ul class="footer-nav">
+            <li class="footer-nav__items"><a class="footer__btn" href="#"></a>À propos</a></li>
+            <li class="footer-nav__items"><a class="footer__items footer__btn" href="#">Nos prix</a></li>
+            <li class="footer-nav__items"><a class="footer__items footer__btn" href="#">Carrières</a></li>
+            <li class="footer-nav__items"><a class="footer__items footer__btn" href="#">FAQs</a></li>
+            <li class="footer-nav__items"><a class="footer__items footer__btn" href="#">Conditions d'utilisation</a></li>
+            <li class="footer-nav__items"><a class="footer__items footer__btn" href="#">Accessibilité</a></li>
+        </ul>
+    </div>
+
+    <div class="credits">
+        <p>Fait par: Anouk Barnes</p>
+        
+        <div class="footer__socials">
+            <i class="fa-brands fa-fw fa-facebook" href="#"></i>
+            <i class="fa-brands fa-fw fa-instagram" href="#"></i>
+            <i class="fa-brands fa-fw fa-linkedin" href="#"></i>
+            <i class="fa-brands fa-fw fa-twitter" href="#"></i>
+        </div>
+
+        <div class="credits__info">
+            <span><i class="fa-solid fa-fw fa-phone"></i></i></span><p>514-997-0916</p><span><i class="fa-solid fa-fw fa-envelope"></i></span>
+        </div>
+       
+
+    </div>
 
 </footer>
 
