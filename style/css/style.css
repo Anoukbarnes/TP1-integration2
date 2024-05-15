@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(236, 236, 233);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.logo__img {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0 0.7em;
+  font-size: 1.2em;
+}
+
+.nav__btn {
+  text-decoration: none;
+  color: black;
+}
+.nav__btn:hover {
+  color: grey;
+}
+
+.nav__item--active {
+  color: rgb(243, 130, 124);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* -------------------------------- */
+/* -------- SECT 1 BANNER --------- */
+/* -------------------------------- */
+.banner {
+  padding: 5%;
+}
+
+.banner__img {
+  width: 100%;
+}
+
+/* -------------------------------- */
+/* ----- SECT 2 SERVICE CARDS ----- */
+/* -------------------------------- */
+.service-section__title {
+  text-align: center;
+  padding-top: 1.5em;
+  font-size: 2.3rem;
+}
+
+.service-section__text {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.flex-service {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  width: 21.5%;
+  align-items: center;
+}
+
+.service-card__title {
+  text-align: center;
+}
+
+.service-card__text {
+  text-align: center;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+
+.service-card__img-1 {
+  width: 25%;
+  background-color: rgb(227, 225, 119);
+  padding: 0.5em;
+  border: 2px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.service-card__img-2 {
+  width: 25%;
+  background-color: rgb(151, 218, 122);
+  padding: 0.5em;
+  border: 2px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.service-card__img-3 {
+  width: 25%;
+  background-color: rgb(213, 133, 236);
+  padding: 0.5em;
+  border: 2px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+/* -------------------------------- */
+/* ---------- SECT 3 GRID---------- */
+/* -------------------------------- */
+.grid__img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 1.5em;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+.grid__item-1 {
+  grid-row: 2/4;
+  grid-column: 1/4;
+}
+
+.grid__item-2 {
+  grid-row: 1/3;
+  grid-column: 4/8;
+}
+
+.grid__item-3 {
+  grid-row: 3/4;
+  grid-column: 4/6;
+}
+
+.grid__item-4 {
+  grid-row: 3/5;
+  grid-column: 6/10;
+}
+
+.grid__item-5 {
+  grid-row: 2/3;
+  grid-column: 8/10;
+}
+
+.grid__item-6 {
+  grid-row: 2/4;
+  grid-column: 10/12;
+}
+
+/* -------------------------------- */
+/* ---------- SECT 4 GRAPH--------- */
+/* -------------------------------- */
+.graph__title {
+  text-align: center;
+  padding-top: 5em;
+  font-size: 2.3rem;
+  padding-bottom: 1.5em;
+}
+
+.graph {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.graph__img {
+  padding-top: 12%;
+}
+
+.graph__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.graph__text {
+  width: 80%;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.graph__btn {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(243, 130, 124);
+  padding: 12px;
+}
+
+/* -------------------------------- */
+/* ------ SECT 5 TEAM CARDS ------- */
+/* -------------------------------- */
+.cards {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.team-card {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+}
+
+.team-section__title {
+  text-align: center;
+  padding-top: 5em;
+  font-size: 2.3rem;
+  padding-bottom: 1.5em;
+}
+
+.team-card__img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.team-card__title {
+  font-size: 1em;
+  margin: 1em 0 0 0;
+}
+
+.team-card__role {
+  margin: 0;
+}
+
+.team-card__text {
+  text-align: justify;
+}
+
+.img-center {
+  display: inline-block;
+  text-align: center;
+}
+
+/* -------------------------------- */
+/* ---------- SECT 6 MAP ---------- */
+/* -------------------------------- */
+.map-section__iframe {
+  padding-top: 5em;
+  padding-bottom: 1.5em;
+  width: 100%;
+  position: absolute;
+}
+
+/* -------------------------------- */
+/* ---------- SECT 6 FOM ---------- */
+/* -------------------------------- */
+.form {
+  position: relative;
+  margin-top: 15%;
+  background-color: whitesmoke;
+  padding: 2em;
+  border-radius: 5%;
+  width: 40%;
+  border: solid 3px rgb(243, 130, 124);
+}
+
+.form__flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__input {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+  width: 90%;
+}
+
+.form__span {
+  padding-left: 0.8em;
+}
+
+.form__btn {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(243, 130, 124);
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 5%;
+}
+
+/* -------------------------------- */
+/* ---------- FOOTER -------------- */
+/* -------------------------------- */
+.footer-img {
+  display: flex;
+  margin: 0 auto;
+  padding: 5% 0 5% 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.footer-nav__items {
+  display: inline-block;
+}
+
+.footer__btn {
+  text-decoration: none;
+  color: black;
+}
+.footer__btn:hover {
+  color: grey;
+}
+
+.credits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.credits__info {
+  display: flex;
+  align-items: center;
+}
+
+.credits__span {
+  padding: 1em;
+}
