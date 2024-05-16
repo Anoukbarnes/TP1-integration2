@@ -87,7 +87,7 @@ header {
   justify-content: space-around;
 }
 
-.service-card__icon-green, .service-card__icon-purple, .service-card__icon-yellow {
+.service-card__icon-purple, .service-card__icon-green, .service-card__icon-yellow {
   width: 25%;
   padding: 0.5em;
   border: 2px solid black;
@@ -110,13 +110,13 @@ header {
   text-align: justify;
 }
 .service-card__icon-yellow {
-  background-color: #e3e177;
-}
-.service-card__icon-purple {
-  background-color: #d585ec;
+  background-color: rgb(227, 225, 119);
 }
 .service-card__icon-green {
-  background-color: #97da7a;
+  background-color: rgb(151, 218, 122);
+}
+.service-card__icon-purple {
+  background-color: rgb(213, 133, 236);
 }
 
 /* -------------------------------- */

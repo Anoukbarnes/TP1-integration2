@@ -1,3 +1,10 @@
+$color-primary: black;
+$bgcolor-primary: rgb(236, 236, 233);
+$color-secondary: rgb(243, 130, 124);
+$bgcolor-icon1:rgb(227, 225, 119);
+$bgcolor-icon2: rgb(151, 218, 122);
+$bgcolor-icon3:rgb(213, 133, 236);
+
 * {
     box-sizing: border-box;
 }
@@ -10,7 +17,7 @@
 
 body {
     margin: 0 auto;
-    background-color: rgb(236, 236, 233);
+    background-color: $bgcolor-primary;
 }
 
 header {
@@ -39,13 +46,13 @@ header {
         font-size: 1.2em;
 
         &--active {
-                color: rgb(243, 130, 124);    
+                color: $color-secondary;    
         }
     }
 
     &__btn {
         text-decoration: none;
-    color: black;
+    color: $color-primary;
 
         &:hover {
             color: grey;
@@ -54,13 +61,10 @@ header {
     }
 }
 
-
 .container {
     margin: 0 auto;
     max-width: 1400px;
 }
-
-
 
 /* -------------------------------- */
 /* -------- SECT 1 BANNER --------- */
@@ -97,9 +101,9 @@ header {
 %icons {
     width: 25%;
     padding: 0.5em;
-    border: 2px solid black;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
+    border: 2px solid $color-primary;
+    border-right: 5px solid $color-primary;
+    border-bottom: 5px solid $color-primary;
 }
 
 .service-card {
@@ -120,17 +124,17 @@ header {
 
     &__icon-yellow {
         @extend %icons;
-        background-color:(#e3e177);
-    }
-
-    &__icon-purple {
-        @extend %icons;
-        background-color:(#d585ec);
+        background-color:$bgcolor-icon1;
     }
 
     &__icon-green {
         @extend %icons;
-        background-color: (#97da7a);
+        background-color:$bgcolor-icon2 ;
+    } 
+    
+    &__icon-purple {
+        @extend %icons;
+        background-color:$bgcolor-icon3;
     }
 
 }
@@ -219,8 +223,8 @@ header {
 
     &__btn {
         text-decoration: none;
-        color: black;
-        background-color: rgb(243, 130, 124);
+        color: $color-primary;
+        background-color: $color-secondary;
         padding: 12px;
     }
 }
@@ -287,7 +291,7 @@ header {
     padding: 2em;
     border-radius: 5%;
     width: 40%;
-    border: solid 3px rgb(243, 130, 124);
+    border: solid 3px $color-secondary;
 
     &__flex {
         display: flex;
@@ -308,7 +312,7 @@ header {
     &__btn {
         text-decoration: none;
         color: black;
-        background-color:rgb(243, 130, 124);
+        background-color:$color-secondary;
         padding: 10px;
         font-family: "Poppins", sans-serif;
         border: none;
@@ -337,7 +341,7 @@ header {
 
     &__btn {
         text-decoration: none;
-        color: black;
+        color: $color-primary;
     
         &:hover {
             color: grey;
