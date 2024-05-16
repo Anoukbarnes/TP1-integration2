@@ -382,6 +382,14 @@ header {
     padding-bottom: 1em;
   }
   .footer-nav {
-    width: 80%;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+  }
+  .footer-nav__items {
+    padding-bottom: 5%;
+  }
+  .map-section__iframe {
+    padding-bottom: 7.5em;
   }
 }
