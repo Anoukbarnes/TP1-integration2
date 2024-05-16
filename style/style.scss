@@ -67,26 +67,24 @@ header {
 /* -------------------------------- */
 
 .banner{
-    padding: 5%;
+    padding-top: 5%;
 
     &__img {
         width: 100%;
-    }
 }
-
-
+}
 
 /* -------------------------------- */
 /* ----- SECT 2 SERVICE CARDS ----- */
 /* -------------------------------- */
 
-.service-section__title {
+.section-title {
     text-align: center;
-    padding-top: 1.5em;
     font-size: 2.3rem;
+    padding: 4% 0;
 }
 
-.service-section__text {
+.section-text {
     text-align: center;
     padding-bottom: 5%;
 }
@@ -96,58 +94,50 @@ header {
     justify-content: space-around;
 }
 
+%icons {
+    width: 25%;
+    padding: 0.5em;
+    border: 2px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
 .service-card {
     display: flex;
     flex-direction: column;
     width: 21.5%;
     align-items: center;
-}
 
+    &__title{
+        text-align: center;
+    }
 
-.service-card__title {
-    text-align: center;
-}
+    &__text {
+        text-align: center;
+        padding-bottom: 1em;
+        text-align: justify;
+    }
 
-.service-card__text {
-    text-align: center;
-    padding-bottom: 1em;
-    text-align: justify;
-}
+    &__icon-yellow {
+        @extend %icons;
+        background-color:(#e3e177);
+    }
 
-.service-card__img-1 {
-    width: 25%;
-    background-color: rgb(227, 225, 119);
-    padding: 0.5em;
-    border:2px solid black;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-}
+    &__icon-purple {
+        @extend %icons;
+        background-color:(#d585ec);
+    }
 
-.service-card__img-2 {
-    width: 25%;
-    background-color: rgb(151, 218, 122);
-    padding: 0.5em;
-    border: 2px solid black;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-}
+    &__icon-green {
+        @extend %icons;
+        background-color: (#97da7a);
+    }
 
-.service-card__img-3 {
-    width: 25%;
-    background-color: rgb(213, 133, 236);
-    padding: 0.5em;
-    border: 2px solid black;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
 }
 
 /* -------------------------------- */
 /* ---------- SECT 3 GRID---------- */
 /* -------------------------------- */
-.grid__img{
-    width: 100%;
-    height: 100%;
-}
 
 .grid {
     display: grid;
@@ -156,86 +146,90 @@ header {
     justify-content: center;
     padding-top: 10%;
     margin: 0 auto;
+
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item-1{
+        grid-row: 2/4;
+        grid-column: 1/4;
+    }
+
+    &__item-2{
+        grid-row: 1/3;
+        grid-column: 4/8;  
+    }
+
+    &__item-3 {
+        grid-row: 3/4;
+        grid-column: 4/6;   
+    }
+
+    &__item-4 {
+        grid-row: 3/5;
+        grid-column: 6/10;  
+    }
+
+    &__item-5{
+        grid-row: 2/3;
+        grid-column: 8/10;   
+    }
+
+    &__item-6{
+        grid-row: 2/4;
+        grid-column: 10/12;
+    }
+    
 }
-
-.grid__item-1{
-    grid-row: 2/4;
-    grid-column: 1/4;
-}
-
-.grid__item-2{
-    grid-row: 1/3;
-    grid-column: 4/8;  
-}
-
-.grid__item-3 {
-    grid-row: 3/4;
-    grid-column: 4/6;   
-}
-
-.grid__item-4 {
-    grid-row: 3/5;
-    grid-column: 6/10;  
-}
-
-.grid__item-5{
-    grid-row: 2/3;
-    grid-column: 8/10;   
-}
-
-.grid__item-6{
-    grid-row: 2/4;
-    grid-column: 10/12;
-}
-
-
 
 /* -------------------------------- */
 /* ---------- SECT 4 GRAPH--------- */
 /* -------------------------------- */
 
-.graph__title {
-    text-align: center;
-    padding-top: 5em;
-    font-size: 2.3rem;
-    padding-bottom: 1.5em;
-}
-
 .graph{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
 
-.graph__img {
-    padding-top: 12%;
-}
+    &__title {
+        text-align: center;
+        padding-top: 5em;
+        font-size: 2.3rem;
+        padding-bottom: 1.5em;
+    }
 
-.graph__right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-}
+    &__img {
+        padding-top: 12%;
+    }
 
-.graph__text {
-    width:80%;
-    text-align: center;
-    padding-bottom: 8%;
-}
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
 
-.graph__btn {
-    text-decoration: none;
-    color: black;
-    background-color: rgb(243, 130, 124);
-    padding: 12px;
+    &__text {
+        width:80%;
+        text-align: center;
+        padding-bottom: 8%;
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(243, 130, 124);
+        padding: 12px;
+    }
 }
 
 /* -------------------------------- */
 /* ------ SECT 5 TEAM CARDS ------- */
 /* -------------------------------- */
 
-.cards {
+.team-section__container {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -248,12 +242,6 @@ header {
     flex-direction: column;
 }
 
-.team-section__title{
-    text-align: center;
-    padding-top: 5em;
-    font-size: 2.3rem;
-    padding-bottom: 1.5em;
-}
 
 .team-card__img {
     width: 50%;
