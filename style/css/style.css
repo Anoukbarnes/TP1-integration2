@@ -209,21 +209,17 @@ header {
   width: 20%;
   flex-direction: column;
 }
-
 .team-card__img {
   width: 50%;
   border-radius: 50%;
 }
-
 .team-card__title {
   font-size: 1em;
   margin: 1em 0 0 0;
 }
-
 .team-card__role {
   margin: 0;
 }
-
 .team-card__text {
   text-align: justify;
 }
