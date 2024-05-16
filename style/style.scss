@@ -330,18 +330,18 @@ header {
     justify-content: space-between;
     width: 60%;
     margin: 0 auto;
-}
 
-.footer-nav__items {
-    display: inline-block;
-}
+    &__items {
+        display: inline-block;
+    }
 
-.footer__btn {
-    text-decoration: none;
-    color: black;
-
-    &:hover {
-        color: grey;
+    &__btn {
+        text-decoration: none;
+        color: black;
+    
+        &:hover {
+            color: grey;
+        }
     }
 }
 
@@ -350,17 +350,16 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 5% 0;
-}
 
-.credits__info {
-    display: flex;
-    align-items: center;
-}
+    &__info {
+        display: flex;
+        align-items: center;
+    }
 
-.credits__span{
-    padding: 1em;
+    &__span{
+        padding: 1em;
+    }
 }
-
 
 
 @media screen and (max-width: 1400px) {

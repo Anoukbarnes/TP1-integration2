@@ -289,16 +289,14 @@ header {
   width: 60%;
   margin: 0 auto;
 }
-
 .footer-nav__items {
   display: inline-block;
 }
-
-.footer__btn {
+.footer-nav__btn {
   text-decoration: none;
   color: black;
 }
-.footer__btn:hover {
+.footer-nav__btn:hover {
   color: grey;
 }
 
@@ -308,12 +306,10 @@ header {
   align-items: center;
   padding: 5% 0;
 }
-
 .credits__info {
   display: flex;
   align-items: center;
 }
-
 .credits__span {
   padding: 1em;
 }
