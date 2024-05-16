@@ -1,0 +1,35 @@
+.form {
+    position: relative;
+    margin-top: 15%;
+    background-color: whitesmoke;
+    padding: 2em;
+    border-radius: 5%;
+    width: 40%;
+    border: solid 3px $color-secondary;
+
+    &__flex {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__input {
+        padding: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.8em;
+        width: 90%;
+    }
+
+    &__span {
+        padding-left: 0.8em;
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: black;
+        background-color:$color-secondary;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        border-radius: 5%;
+    }
+}
