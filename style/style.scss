@@ -68,11 +68,12 @@ header {
 
 .banner{
     padding: 5%;
+
+    &__img {
+        width: 100%;
+    }
 }
 
-.banner__img {
-    width: 100%;
-}
 
 
 /* -------------------------------- */
