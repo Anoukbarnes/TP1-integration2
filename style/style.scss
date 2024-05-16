@@ -288,33 +288,33 @@ header {
     border-radius: 5%;
     width: 40%;
     border: solid 3px rgb(243, 130, 124);
-}
 
-.form__flex{
-    display: flex;
-    justify-content: flex-end;
-}
-.form__input {
-    padding: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.8em;
-    width: 90%;
-}
+    &__flex {
+        display: flex;
+        justify-content: flex-end;
+    }
 
-.form__span {
-    padding-left: 0.8em;
-}
+    &__input {
+        padding: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.8em;
+        width: 90%;
+    }
 
-.form__btn {
-    text-decoration: none;
-    color: black;
-    background-color:rgb(243, 130, 124);
-    padding: 10px;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    border-radius: 5%;
-}
+    &__span {
+        padding-left: 0.8em;
+    }
 
+    &__btn {
+        text-decoration: none;
+        color: black;
+        background-color:rgb(243, 130, 124);
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        border-radius: 5%;
+    }
+}
 
 /* -------------------------------- */
 /* ---------- FOOTER -------------- */
