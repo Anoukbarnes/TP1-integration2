@@ -1,13 +1,6 @@
-/* -------------------------------- */
-/* --------- > 1400px ------------- */
-/* -------------------------------- */
 * {
   box-sizing: border-box;
 }
-
-#nav__long {display: inline-block !important;}
-
-#nav__hamburger {display: none !important;}
 
 .poppins-medium {
   font-family: "Poppins", sans-serif;
@@ -31,6 +24,14 @@ header {
   width: 100%;
   margin: 0;
   display: block;
+}
+
+#nav__long {
+  display: inline-block !important;
+}
+
+#nav__hamburger {
+  display: none !important;
 }
 
 .nav__item {
@@ -365,11 +366,12 @@ header {
   }
 }
 @media screen and (max-width: 960px) {
-  
-  #nav__long {display: none !important;}
-
-  #nav__hamburger {display: inline-block !important;}
-  
+  #nav__long {
+    display: none !important;
+  }
+  #nav__hamburger {
+    display: inline-block !important;
+  }
   .cards {
     justify-content: space-around;
     padding-bottom: 1em;
@@ -377,6 +379,9 @@ header {
   }
   .team-card {
     width: 35%;
-    padding-bottom: 5%;
+    padding-bottom: 1em;
+  }
+  .footer-nav {
+    width: 80%;
   }
 }

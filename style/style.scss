@@ -28,6 +28,10 @@ header {
     display: block;
 }
 
+#nav__long {display: inline-block !important;}
+
+#nav__hamburger {display: none !important;}
+
 .nav__item {
     display: inline-block;
     margin: 0 0.7em;
@@ -379,7 +383,9 @@ header {
 
 @media screen and (max-width: 960px) {
 
-    
+    #nav__long {display: none !important;}
+
+    #nav__hamburger {display: inline-block !important;}
 
     .cards {
         justify-content: space-around;
@@ -389,7 +395,11 @@ header {
 
     .team-card {
         width: 35%;
-        padding-bottom: 5%;
+        padding-bottom: 1em;
     }
+
+    .footer-nav {
+        width: 80%;
+      }
     
 }
