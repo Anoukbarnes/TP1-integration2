@@ -20,7 +20,7 @@ header {
     margin: 0 1em;
 }
 
-.logo__img{
+.logo-img{
     width: 100%;
     margin: 0;
     display: block;
@@ -30,24 +30,30 @@ header {
 
 #nav__hamburger {display: none !important;}
 
-.nav__item {
-    display: inline-block;
-    margin: 0 0.7em;
-    font-size: 1.2em;
-}
+.nav {
+    text-align: right;
 
-.nav__btn {
-    text-decoration: none;
+    &__item{
+        display: inline-block;
+        margin: 0 0.7em;
+        font-size: 1.2em;
+
+        &--active {
+                color: rgb(243, 130, 124);    
+        }
+    }
+
+    &__btn {
+        text-decoration: none;
     color: black;
 
-    &:hover {
-        color: grey;
+        &:hover {
+            color: grey;
+        }
+
     }
 }
 
-.nav__item--active {
-    color: rgb(243, 130, 124);
-}
 
 .container {
     margin: 0 auto;
