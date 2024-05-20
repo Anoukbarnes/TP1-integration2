@@ -1,18 +1,15 @@
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0 auto;
   background-color: rgb(236, 236, 233);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 header {
@@ -55,24 +52,13 @@ header {
   color: grey;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
-/* -------------------------------- */
-/* -------- SECT 1 BANNER --------- */
-/* -------------------------------- */
-.banner {
+.carousel {
   padding-top: 5%;
 }
-.banner__img {
+.carousel__img {
   width: 100%;
 }
 
-/* -------------------------------- */
-/* ----- SECT 2 SERVICE CARDS ----- */
-/* -------------------------------- */
 .section-title {
   text-align: center;
   font-size: 2.3rem;
@@ -121,9 +107,6 @@ header {
   background-color: rgb(213, 133, 236);
 }
 
-/* -------------------------------- */
-/* ---------- SECT 3 GRID---------- */
-/* -------------------------------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -161,9 +144,6 @@ header {
   grid-column: 10/12;
 }
 
-/* -------------------------------- */
-/* ---------- SECT 4 GRAPH--------- */
-/* -------------------------------- */
 .graph {
   display: flex;
   justify-content: space-around;
@@ -196,9 +176,6 @@ header {
   padding: 12px;
 }
 
-/* -------------------------------- */
-/* ------ SECT 5 TEAM CARDS ------- */
-/* -------------------------------- */
 .team-section__container {
   list-style-type: none;
   display: flex;
@@ -231,9 +208,6 @@ header {
   text-align: center;
 }
 
-/* -------------------------------- */
-/* ---------- SECT 6 MAP ---------- */
-/* -------------------------------- */
 .map-section__iframe {
   padding-top: 5em;
   padding-bottom: 1.5em;
@@ -241,9 +215,6 @@ header {
   position: absolute;
 }
 
-/* -------------------------------- */
-/* ---------- SECT 6 FOM ---------- */
-/* -------------------------------- */
 .form {
   position: relative;
   margin-top: 15%;
@@ -276,9 +247,6 @@ header {
   border-radius: 5%;
 }
 
-/* -------------------------------- */
-/* ---------- FOOTER -------------- */
-/* -------------------------------- */
 .footer-img {
   display: flex;
   margin: 0 auto;
