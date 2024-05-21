@@ -1,0 +1,42 @@
+@use 'colors' as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.logo-img{
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+#nav__long {display: inline-block !important;}
+
+#nav__hamburger {display: none !important;}
+
+.nav {
+    text-align: right;
+
+    &__item{
+        display: inline-block;
+        margin: 0 0.7em;
+        font-size: 1.2em;
+
+        &--active {
+                color: $color-secondary;    
+        }
+    }
+
+    &__btn {
+        text-decoration: none;
+    color: $color-primary;
+
+        &:hover {
+            color: grey;
+        }
+
+    }
+}
