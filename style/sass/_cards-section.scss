@@ -1,0 +1,59 @@
+@use 'colors' as *;
+@use 'mixins' as *;
+
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 5% 0;
+}
+
+.section-text {
+    text-align: center;
+    font-size: 8rem;
+}
+
+.flex-service {
+    display: flex;
+    justify-content: space-around;
+}
+
+%icons {
+    width: 25%;
+    padding: 0.5em;
+    border: 2px solid $color-primary;
+    border-right: 5px solid $color-primary;
+    border-bottom: 5px solid $color-primary;
+    border-radius: 8%;
+}
+
+
+.service-card {
+    @include card (2em, 23%);
+
+    &__title{
+        padding-top: 3%;
+    }
+
+    &__text {
+        text-align: center;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    &__icon-yellow {
+        @extend %icons;
+        background-color: $bgcolor-icon1;
+    }
+
+    &__icon-green {
+        @extend %icons;
+        background-color: $bgcolor-icon2 ;
+    } 
+    
+    &__icon-purple {
+        @extend %icons;
+        background-color: $bgcolor-icon3;
+    }
+
+}
