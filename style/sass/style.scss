@@ -1,6 +1,7 @@
 @use 'colors' as *;
 @use 'header' as *;
 @use 'variables' as *;
+@use 'mixins' as *;
 
 * {
     box-sizing: border-box;
@@ -23,6 +24,48 @@ h1, h2, h3, h4, h5 {
 
 //Header
 
+//Link Accessibility
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+
+
+
+
+//btn-mail
+.flex-mail {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-mail {
+    @include buttons (1em, 0.9rem);
+
+    &__input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 12px;
+       
+    }
+}
+
+.btn-soumission {
+    @include buttons (1.2em, 1.1rem);
+}
 
 //Carousel
 
@@ -34,12 +77,12 @@ h1, h2, h3, h4, h5 {
 }
 }
 
-//Buttons
+//Buttons 
 .flex-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding: 3%;
 }
 
 //Service cards 
@@ -53,7 +96,6 @@ h1, h2, h3, h4, h5 {
 
 .section-text {
     text-align: center;
-    padding: 5% 0;
     font-size: 8rem;
 }
 
@@ -69,18 +111,6 @@ h1, h2, h3, h4, h5 {
     border-right: 5px solid $color-primary;
     border-bottom: 5px solid $color-primary;
     border-radius: 8%;
-}
-
-@mixin card($padding-card, $width) {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid $color-primary;
-    border-right: 8px solid $color-primary;
-    border-bottom: 8px solid $color-primary;
-    border-radius: 5%;
-    padding: $padding-card;
-    width: $width;
 }
 
 
@@ -124,6 +154,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     padding-top: 12%;
     margin: 0 auto;
+    padding-bottom: 3%;
 
     &__img{
         width: 100%;
@@ -168,6 +199,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 3%;
 
     &__title {
         text-align: center;
@@ -195,10 +227,7 @@ h1, h2, h3, h4, h5 {
     }
 
     &__btn {
-        text-decoration: none;
-        color: $color-primary;
-        background-color: $color-secondary;
-        padding: 12px;
+        @include buttons (1em, 1rem);
     }
 }
 
@@ -228,15 +257,15 @@ h1, h2, h3, h4, h5 {
         margin: 0;
     }
 
-    &__text {
-        text-align: justify;
-    }
 }
 
 .img-center {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
+
+
 
 
 //map
@@ -263,26 +292,55 @@ h1, h2, h3, h4, h5 {
     }
 
     &__input {
-        padding: 0.5em;
-        margin-top: 0.5em;
-        margin-bottom: 0.8em;
-        width: 90%;
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 12px;
+        padding: 12px;
+        width: 100%;
+
+        &:focus {
+            outline: 0;
+        }
     }
 
+    &__input-control {
+        display: flex;
+        flex-direction: column;
+
+        &--success .form__input {
+            border-color: #09c372;
+        }
+
+        &--error .form__input {
+            border-color: #ff3860;
+        }
+
+        .form__input--errorMessage {
+            color: #ff3860;
+            font-size: 9px;
+            height: 13px;
+        }
+    }
+
+    
+    &__label {
+        padding: 12px 0 8px 0;
+    }
+
+    
+
     &__span {
-        padding-left: 0.8em;
+        padding-left: 0.5em;
+        color: #ff3860;
     }
 
     &__btn {
-        text-decoration: none;
-        color: black;
-        background-color: $color-secondary;
-        padding: 10px;
-        font-family: "Poppins", sans-serif;
-        border: none;
-        border-radius: 5%;
+        @include buttons (1.1em, 0.9rem);
     }
 }
+
+//Validation form
 
 //Footer
 .footer-img {
