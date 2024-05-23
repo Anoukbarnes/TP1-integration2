@@ -57,6 +57,55 @@ h1, h2, h3, h4, h5 {
   max-width: 1400px;
 }
 
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.flex-mail {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-mail {
+  text-decoration: none;
+  color: #000000;
+  background-color: #f3827c;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.btn-mail__input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 12px;
+}
+
+.btn-soumission {
+  text-decoration: none;
+  color: #000000;
+  background-color: #f3827c;
+  padding: 1.2em;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
 .carousel {
   padding-top: 5%;
 }
@@ -68,7 +117,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  padding: 3%;
 }
 
 .section-title {
@@ -79,7 +128,6 @@ h1, h2, h3, h4, h5 {
 
 .section-text {
   text-align: center;
-  padding: 5% 0;
   font-size: 8rem;
 }
 
@@ -133,6 +181,7 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   padding-top: 12%;
   margin: 0 auto;
+  padding-bottom: 3%;
 }
 .grid__img {
   width: 100%;
@@ -167,6 +216,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 3%;
 }
 .graph__title {
   text-align: center;
@@ -193,7 +243,11 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
   color: #000000;
   background-color: #f3827c;
-  padding: 12px;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 .team-section__container {
@@ -225,13 +279,10 @@ h1, h2, h3, h4, h5 {
 .team-card__role {
   margin: 0;
 }
-.team-card__text {
-  text-align: justify;
-}
 
 .img-center {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .map-section__iframe {
@@ -255,22 +306,47 @@ h1, h2, h3, h4, h5 {
   justify-content: flex-end;
 }
 .form__input {
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.8em;
-  width: 90%;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 12px;
+  width: 100%;
+}
+.form__input:focus {
+  outline: 0;
+}
+.form__input-control {
+  display: flex;
+  flex-direction: column;
+}
+.form__input-control--success .form__input {
+  border-color: #09c372;
+}
+.form__input-control--error .form__input {
+  border-color: #ff3860;
+}
+.form__input-control .form__input--errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+.form__label {
+  padding: 12px 0 8px 0;
 }
 .form__span {
-  padding-left: 0.8em;
+  padding-left: 0.5em;
+  color: #ff3860;
 }
 .form__btn {
   text-decoration: none;
-  color: black;
+  color: #000000;
   background-color: #f3827c;
-  padding: 10px;
+  padding: 1.1em;
   font-family: "Poppins", sans-serif;
   border: none;
-  border-radius: 5%;
+  border-radius: 8px;
+  font-size: 0.9rem;
 }
 
 .footer-img {

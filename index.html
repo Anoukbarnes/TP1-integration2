@@ -17,8 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
 
+    <script src="scripts/validationScript.js"></script>
     <script src="https://kit.fontawesome.com/7116a37cd7.js" crossorigin="anonymous"></script>
-
+  
 </head>
 
 <body class="poppins-medium">
@@ -27,14 +28,15 @@
 <!------------Header----------->
 <!----------------------------->
 <header>
-    <h1><a href="#section-1"><img class="logo-img" src="img/polarka-logo.png" alt="logo"></a></h1>
+    <h1><a href="#section-1" role="button"><img class="logo-img" src="img/polarka-logo.png" alt="logo"></a></h1>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
     <nav class="nav">
         <div id="nav__long">
             <ul>
-                <li class="nav__item nav__item--active"><a href="#service-section"></a>Nos services</a></li>
-                <li class="nav__item"><a class="nav__btn" href="#partner-section">Nos partenaires</a></li>
-                <li class="nav__item"><a class="nav__btn" href="#stats-section">Statistiques</a></li>
-                <li class="nav__item"><a class="nav__btn" href="#map-section">Nous joindre</a></li>
+                <li class="nav__item nav__item--active"><a href="#service-section" role="navigation"></a>Nos services</a></li>
+                <li class="nav__item"><a class="nav__btn" href="#partner-section" role="navigation">Nos partenaires</a></li>
+                <li class="nav__item"><a class="nav__btn" href="#stats-section" role="navigation">Statistiques</a></li>
+                <li class="nav__item"><a class="nav__btn" href="#map-section" role="navigation">Nous joindre</a></li>
             </ul>
         </div>
 
@@ -46,18 +48,22 @@
 </header>
 <hr>
 
-<main>
+<main id="content">
 
     <section class="container carousel" id="section-1">
         <img class= "carousel__img" src="img/banniere.jpg" alt="Image pièce intérieur ordinateur">
     </section>
 
     <section class="container flex-buttons">
-        <div>
-            <span>S'abonner à l'infolettre</span><a class="" href="#"> Je m'abonne</a>
+        <div class="flex-mail">
+            <h3>S'abonner à l'infolettre</h3>
+            <div>
+                <input class="btn-mail__input" type="email" id="email" name="email" placeholder="xyz@mail.com">
+                <span><a class="btn-mail" href="#" role="button"> Je m'abonne</a></span>
+            </div>
         </div>
-        <div>
-            <a class="" href="#"> Demander une soumission</a>
+        <div class="flex-buttons">
+            <a class="btn-soumission" href="#" role="button"> Demander une soumission</a>
         </div> 
     </section>
 
@@ -112,7 +118,7 @@
             <div class="graph__right">
                 <h1 class="graph__title">Des résultats qui parlent d'eux même</h1>
                 <p class="graph__text"> Fort de plus de 20 ans d'expérience et de centaines de projets de transformation réussis auprès de nos clients, nous vous aidons à tracer votre voie vers une entreprise habilitée par l'IA.</p>
-                <a class="graph__btn" href="#"> J'en apprend davantage</a>
+                <a class="graph__btn" href="#" role="button"> J'en apprend davantage</a>
             </div>
         </div>
     </section>
@@ -139,19 +145,21 @@
                     <div class="img-center">
                         <img class="team-card__img" src="img/team-2.jpeg" alt="Photo de Steven Armede">
                     </div>
-                    <h4 class="team-card__title">Steven Armede</h4>
-                    <p class="team-card__role">Co-fondateur</p>
-                    <p class="team-card__text">Geek assumé, Steven est un expert en satisfaction client et s'engage à offrir une expérience exceptionnelle à chaque interaction.</p>
                     <div>
-                        <i class="fa-brands fa-facebook" href="#"></i>
-                        <i class="fa-brands fa-instagram" href="#"></i>
-                        <i class="fa-brands fa-linkedin" href="#"></i>
+                        <h4 class="team-card__title">Steven Armede</h4>
+                        <p class="team-card__role">Co-fondateur</p>
+                        <p class="team-card__text">Geek assumé, Steven est un expert en satisfaction client et s'engage à offrir une expérience exceptionnelle à chaque interaction.</p>
+                        <div>
+                            <i class="fa-brands fa-facebook" href="#"></i>
+                            <i class="fa-brands fa-instagram" href="#"></i>
+                            <i class="fa-brands fa-linkedin" href="#"></i>
+                        </div>
                     </div>
                 </li>
 
                 <li class="team-card">
                     <div class="img-center">
-                        <img class="team-card__img" src="img/team-2.jpeg" alt="Photo de Steven Armede">
+                        <img class="team-card__img" src="img/team-3.png" alt="Photo de Steven Armede">
                     </div>
                     <h4 class="team-card__title">Karl Ginola</h4>
                     <p class="team-card__role">Lead Cloud</p>
@@ -165,7 +173,7 @@
 
                 <li class="team-card">
                     <div class="img-center">
-                        <img class="team-card__img" src="img/team-2.jpeg" alt="Photo de Steven Armede">
+                        <img class="team-card__img" src="img/team-4.png" alt="Photo de Steven Armede">
                     </div>
                     <h4 class="team-card__title"> Brenda Rivera</h4>
                     <p class="team-card__role">Lead Data et IA</p>
@@ -185,24 +193,28 @@
 
     <section class="container form__flex">
         <form id="form" class="form" action="confirmation.html" onsubmit="return validateForm()">
-            <label class= "form__label" for="first-name">Votre prénom</label><span class="form__span">*</span>
-                <div class="input-control">
-                    <input class= "form__input" type="text" id="first-name" name="first-name" placeholder="Prénom" required>
-                    <label class= "form__label" for="first-name">Votre nom</label><span class="form__span">*</span>
+                <div class="form__input-control">
+                    <label class= "form__label" for="first-name">Votre prénom: <span class="form__span">*</span></label>
+                    <input class= "form__input" type="text" id="first-name" name="first-name" placeholder="Prénom">
+                    <div class="form__input--errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <input class= "form__input" type="text" id="last-name" name="last-name" placeholder="Nom" required>
-                    <label class= "form__label" for="mail-client">Votre courriel</label><span class="form__span">*</span>
+                <div class="form__input-control">
+                    <label class= "form__label" for="last-name">Votre nom: <span class="form__span">*</span></label>
+                    <input class= "form__input" type="text" id="last-name" name="last-name" placeholder="Nom">
+                    <div class="form__input--errorMessage"></div>
                 </div>
-                <div class="input-control"> 
-                    <input class= "form__input" type="email" id="mail-client" name="mail-client" placeholder="xyz@mail.com" required>
-                    <label class= "form__label" for="txt-info">Informations sur vos besoins:</label>
+                <div class="form__input-control">
+                    <label class= "form__label" for="email">Votre courriel <span class="form__span">*</span></label>
+                    <input class= "form__input" type="email" id="email" name="email" placeholder="xyz@mail.com">
+                    <div class="form__input--errorMessage"></div>
                 </div>
-                <div class="input-control">
-                    <textarea class= "form__input" id="txt-info" name="txt-info" placeholder="Message" required></textarea><span class="form__span">*</span>
-                </div> 
+                <div class="form__input-control"> 
+                    <label class= "form__label" for="txt-info">Informations sur vos besoins: <span class="form__span">*</span></label>
+                    <textarea class= "form__input" id="txt-info" name="txt-info" placeholder="Message"></textarea>
+                    <div class="form__input--errorMessage"></div>
+                </div>
                 <div>
-                    <input class="form__btn" href="#" type="submit" id= "btn-form" value="Envoyer">
+                    <input class="form__btn" type="submit" value="Envoyer le formulaire">
                 </div>
         </form>
     </section>
@@ -216,12 +228,12 @@
 
     <div>
         <ul class="footer-nav">
-            <li class="footer-nav__items"><a class="footer__btn" href="#"></a>À propos</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#"></a>Nos prix</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#"></a>Carrières</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#"></a>FAQs</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#"></a>Conditions d'utilisation</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#"></a>Accessibilité</li>
+            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>À propos</li>
+            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Nos prix</li>
+            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Carrières</li>
+            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>FAQs</li>
+            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Conditions d'utilisation</li>
+            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Accessibilité</li>
         </ul>
     </div>
 
