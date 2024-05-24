@@ -11,6 +11,7 @@
     border-radius: 5%;
     padding: $padding-card;
     width: $width;
+    justify-content: space-between;
 }
 
 @mixin buttons($padding-btn, $font-size) {

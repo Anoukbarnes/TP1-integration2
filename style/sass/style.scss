@@ -5,6 +5,7 @@
 @use 'general' as *;
 @use 'accessibility' as *;
 @use 'buttons' as *;
+@use 'media-queries' as *;
 
 
 //Website sections
@@ -13,6 +14,7 @@
 @use 'grid' as *;
 @use 'graph-section' as *;
 @use 'team-cards' as *;
+@use 'footer' as *;
 
 
 
@@ -97,3 +99,4 @@
         @include buttons (1.1em, 0.9rem);
     }
 }
+

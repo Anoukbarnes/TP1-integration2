@@ -1,44 +1,73 @@
+@use 'variables' as *;
+@use 'colors' as *;
+@use 'mixins' as *;
+@use 'general' as *;
+@use 'accessibility' as *;
+@use 'buttons' as *;
 
-//Mediaqueries
-@media screen and (max-width: 1400px) {
-    .container{
-        margin: 0 auto;
-        max-width: 1100px;
-        margin-left: 4%;
-        margin-right: 4%;
+//Website sections
+@use 'header' as *;
+@use 'cards-section' as *;
+@use 'grid' as *;
+@use 'graph-section' as *;
+@use 'team-cards' as *;
+@use 'footer' as *;
+
+
+@media  screen and (max-width: 1400px) {
+    .container {
+        margin-left: $margin-left-gen;
+        margin-right: $margin-right-gen;
     }
-}
 
+    .section-text {
+        font-size: 6rem;
+    }
 
-@media screen and (max-width: 960px) {
-
-    #nav__long {display: none !important;}
-
-    #nav__hamburger {display: inline-block !important;}
-
-    .cards {
-        justify-content: space-around;
-        padding-bottom: 1em;
-        flex-wrap: wrap;
+    .service-card {
+        width: 30%;
     }
 
     .team-card {
-        width: 35%;
-        padding-bottom: 1em;
+        width: 23%;
+    }
+}
+
+@media  screen and (max-width: 1100px) {
+    .container {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .flex-service {
+        flex-wrap: wrap;
+    }
+
+    .section-text {
+        font-size: 4.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+    }
+
+    .service-card {
+        width: 40%;
+        margin-bottom: 3em;
+    }
+    
+
+    .team-section__container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+        .team-card {
+            width: 40%;
+            margin-bottom: 3em;
+        }
     }
 
     .footer-nav {
-        flex-wrap: wrap;
-        width: 50%;
-        justify-content: space-around;
-      
-      &__items {
-        padding-bottom: 5%;
-      }
+        width: 75%;
     }
-
-   .map-section__iframe{
-        padding-bottom: 7.5em;
-   }
-    
 }

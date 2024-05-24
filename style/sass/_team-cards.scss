@@ -12,7 +12,6 @@
 
 .team-card {
     @include card (1em, 20%);
-    
 
     &__img {
         width: 50%;

@@ -15,6 +15,8 @@ h1, h2, h3, h4, h5 {
 .container {
   margin: 0 auto;
   max-width: 1400px;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 /*Main content link Accessibility
@@ -61,7 +63,7 @@ Text meant only for screen readers. */
   text-decoration: none;
   color: #000000;
   background-color: #f3827c;
-  padding: 1.2em;
+  padding: 1em;
   font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 8px;
@@ -79,7 +81,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1em;
+  margin: 0 1.5em;
 }
 
 .logo-img {
@@ -150,6 +152,7 @@ header {
   border-radius: 5%;
   padding: 2em;
   width: 23%;
+  justify-content: space-between;
 }
 .service-card__title {
   padding-top: 3%;
@@ -219,14 +222,18 @@ header {
   font-size: 2.3rem;
   padding-bottom: 1.5em;
 }
-.graph__img {
+.graph__container {
   padding-top: 12%;
+  display: flex;
+}
+.graph__img {
+  width: 100%;
 }
 .graph__right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 65%;
 }
 .graph__text {
   width: 80%;
@@ -262,6 +269,7 @@ header {
   border-radius: 5%;
   padding: 1em;
   width: 20%;
+  justify-content: space-between;
 }
 .team-card__img {
   width: 50%;
@@ -280,6 +288,88 @@ header {
   justify-content: center;
 }
 
+.footer-img {
+  display: flex;
+  margin: 0 auto;
+  padding: 5% 0 5% 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+.footer-nav__items {
+  display: inline-block;
+}
+.footer-nav__btn {
+  text-decoration: none;
+  color: #000000;
+}
+.footer-nav__btn:hover {
+  color: grey;
+}
+
+.credits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0;
+}
+.credits__info {
+  display: flex;
+  align-items: center;
+}
+.credits__span {
+  padding: 1em;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .section-text {
+    font-size: 6rem;
+  }
+  .service-card {
+    width: 30%;
+  }
+  .team-card {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .flex-service {
+    flex-wrap: wrap;
+  }
+  .section-text {
+    font-size: 4.5rem;
+  }
+  .section-title {
+    font-size: 2.5em;
+  }
+  .service-card {
+    width: 40%;
+    margin-bottom: 3em;
+  }
+  .team-section__container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .team-section__container .team-card {
+    width: 40%;
+    margin-bottom: 3em;
+  }
+  .footer-nav {
+    width: 75%;
+  }
+}
 .carousel {
   padding-top: 5%;
 }
