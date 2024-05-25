@@ -64,23 +64,25 @@
         }
     }
 
-    &__input-control {
-        display: flex;
-        flex-direction: column;
-
-        &--success .form__input {
-            border-color: #09c372;
-        }
-
-        &--error .form__input {
-            border-color: #ff3860;
-        }
-
-        .form__input--errorMessage {
-            color: #ff3860;
-            font-size: 9px;
-            height: 13px;
-        }
+    .input-control {
+   
+        &input:focus{
+            outline: 0;
+       }
+    
+       &.success input {
+        border-color: $sucessColor;
+       }
+    
+       &.error input {
+        border-color: $errorColor;
+       }
+    
+       .errorMessage{
+        color: $errorColor;
+        font-size: 9px;
+        height: 13px;
+       }
     }
 
     

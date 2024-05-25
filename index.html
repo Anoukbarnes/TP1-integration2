@@ -16,8 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-
-    <script src="scripts/validationScript.js"></script>
     <script src="https://kit.fontawesome.com/7116a37cd7.js" crossorigin="anonymous"></script>
   
 </head>
@@ -58,7 +56,7 @@
         <div class="flex-mail">
             <h3>S'abonner à l'infolettre</h3>
             <div class="flex-btn-letter">
-                <input class="btn-mail__input" type="email" id="email" name="email" placeholder="xyz@mail.com">
+                <input class="btn-mail__input" type="email" id="email-newsletter" name="email" placeholder="xyz@mail.com">
                 <a class="btn-mail" href="#" role="button"> Je m'abonne</a>
             </div>
         </div>
@@ -190,26 +188,25 @@
     </section>
 
     <section class="container form__flex">
-        <form id="form" class="form" action="confirmation.html" onsubmit="return validateForm()">
-                <div class="form__input-control">
+        <form id="form" class="form" action="confirmation.html">
+                <div class="input-control">
                     <label class= "form__label" for="first-name">Votre prénom: <span class="form__span">*</span></label>
                     <input class= "form__input" type="text" id="first-name" name="first-name" placeholder="Prénom">
-                    <div class="form__input--errorMessage"></div>
+                    <div class="errorMessage"></div>
                 </div>
-                <div class="form__input-control">
+                <div class="input-control">
                     <label class= "form__label" for="last-name">Votre nom: <span class="form__span">*</span></label>
                     <input class= "form__input" type="text" id="last-name" name="last-name" placeholder="Nom">
-                    <div class="form__input--errorMessage"></div>
+                    <div class="errorMessage"></div>
                 </div>
-                <div class="form__input-control">
+                <div class="input-control">
                     <label class= "form__label" for="email">Votre courriel <span class="form__span">*</span></label>
-                    <input class= "form__input" type="email" id="email" name="email" placeholder="xyz@mail.com">
-                    <div class="form__input--errorMessage"></div>
+                    <input class= "form__input" type="text" id="email" name="email" placeholder="xyz@mail.com">
+                    <div class="errorMessage"></div>
                 </div>
-                <div class="form__input-control"> 
-                    <label class= "form__label" for="txt-info">Informations sur vos besoins: <span class="form__span">*</span></label>
+                <div class="input-control"> 
+                    <label class= "form__label" for="txt-info">Informations sur vos besoins:</label>
                     <textarea class= "form__input" id="txt-info" name="txt-info" placeholder="Message"></textarea>
-                    <div class="form__input--errorMessage"></div>
                 </div>
                 <div>
                     <input class="form__btn" type="submit" value="Envoyer le formulaire">
@@ -253,6 +250,6 @@
     </div>
 
 </footer>
-
+    <script src="scripts/validationScript.js"></script>
 </body>
 </html>
