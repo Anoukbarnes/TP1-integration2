@@ -4,7 +4,6 @@ const lastname = document.getElementById('last-name');
 const email = document.getElementById('email');
 
 
-
 form.addEventListener('submit', e => {
     e.preventDefault();
     if (validateInputs()) {
@@ -12,7 +11,6 @@ form.addEventListener('submit', e => {
         form.submit();
     }
 });
-
 
 
 //Fonction qui va valider notre formulaire 
