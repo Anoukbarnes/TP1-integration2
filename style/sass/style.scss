@@ -58,6 +58,7 @@
         font-size: 12px;
         padding: 12px;
         width: 100%;
+        margin-top: 4%;
 
         &:focus {
             outline: 0;
@@ -85,20 +86,15 @@
        }
     }
 
-    
-    &__label {
-        padding: 12px 0 8px 0;
-    }
-
-    
-
     &__span {
         padding-left: 0.5em;
-        color: #ff3860;
+        color: $errorColor;
     }
 
     &__btn {
         @include buttons (1.1em, 0.9rem);
+        margin-top: 6%;
+        width: 100%;
     }
 }
 

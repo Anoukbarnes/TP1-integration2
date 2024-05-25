@@ -12,7 +12,7 @@
 //btn-mail
 .flex-mail {
     display: flex;
-    width: 78%;
+    width: 90%;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -25,8 +25,7 @@
     &__input {
         border: 2px solid #f0f0f0;
         border-radius: 4px;
-        font-size: 12px;
-        padding: 12px;
+        padding: 0 12px 120px 0;
     }
 }
 

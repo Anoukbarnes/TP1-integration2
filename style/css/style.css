@@ -42,7 +42,7 @@ Text meant only for screen readers. */
 
 .flex-mail {
   display: flex;
-  width: 78%;
+  width: 90%;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -62,8 +62,7 @@ Text meant only for screen readers. */
 .btn-mail__input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
-  font-size: 12px;
-  padding: 12px;
+  padding: 0 12px 120px 0;
 }
 
 .btn-soumission {
@@ -608,6 +607,7 @@ header {
   font-size: 12px;
   padding: 12px;
   width: 100%;
+  margin-top: 4%;
 }
 .form__input:focus {
   outline: 0;
@@ -626,9 +626,6 @@ header {
   font-size: 9px;
   height: 13px;
 }
-.form__label {
-  padding: 12px 0 8px 0;
-}
 .form__span {
   padding-left: 0.5em;
   color: #ff3860;
@@ -642,4 +639,6 @@ header {
   border: none;
   border-radius: 8px;
   font-size: 0.9rem;
+  margin-top: 6%;
+  width: 100%;
 }
