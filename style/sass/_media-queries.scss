@@ -45,6 +45,10 @@
         flex-wrap: wrap;
     }
 
+    .flex-btn-letter {
+        width: 50%;
+    }
+
     .section-text {
         font-size: 4.5rem;
     }
@@ -112,13 +116,6 @@
     }
 }
 
-@media  screen and (max-width: 960px) {
-
-    .flex-mail {
-        padding-bottom: 3%;
-    }
-
-}
 
 @media  screen and (max-width: 840px) {
 
@@ -127,6 +124,14 @@
             font-size: 1em;
         }
      }
+
+     .flex-mail {
+        justify-content: space-around;
+     }
+
+    .btn-mail__input {
+        padding: 3% 10% 3% 0;
+    }
 
     .section-title {
         font-size: 2rem;
@@ -191,6 +196,10 @@
 
     .flex-mail {
         width: 67%;
+    }
+
+    .flex-btn-letter{
+        width: 100%;
     }
 
     .section-text {

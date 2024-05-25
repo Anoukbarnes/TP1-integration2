@@ -62,7 +62,7 @@ Text meant only for screen readers. */
 .btn-mail__input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
-  padding: 5% 30% 5% 0;
+  padding: 3% 30% 5% 0;
 }
 
 .btn-soumission {
@@ -354,6 +354,9 @@ header {
   .flex-service {
     flex-wrap: wrap;
   }
+  .flex-btn-letter {
+    width: 50%;
+  }
   .section-text {
     font-size: 4.5rem;
   }
@@ -407,14 +410,15 @@ header {
     width: 75%;
   }
 }
-@media screen and (max-width: 960px) {
-  .flex-mail {
-    padding-bottom: 3%;
-  }
-}
 @media screen and (max-width: 840px) {
   .nav__item {
     font-size: 1em;
+  }
+  .flex-mail {
+    justify-content: space-around;
+  }
+  .btn-mail__input {
+    padding: 3% 10% 3% 0;
   }
   .section-title {
     font-size: 2rem;
@@ -459,6 +463,9 @@ header {
   }
   .flex-mail {
     width: 67%;
+  }
+  .flex-btn-letter {
+    width: 100%;
   }
   .section-text {
     font-size: 3rem;
