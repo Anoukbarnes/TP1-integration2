@@ -7,11 +7,12 @@
 
 //Website sections
 @use 'header' as *;
-@use 'cards-section' as *;
+@use 'services-cards' as *;
 @use 'grid' as *;
 @use 'graph-section' as *;
 @use 'team-cards' as *;
 @use 'footer' as *;
+
 
 
 @media  screen and (max-width: 1400px) {
@@ -25,18 +26,19 @@
     }
 
     .service-card {
-        width: 30%;
+        width: 28%;
     }
 
-    .team-card {
-        width: 23%;
-    }
 }
 
 @media  screen and (max-width: 1100px) {
     .container {
         margin-left: 8%;
         margin-right: 8%;
+    }
+
+    .flex-mail {
+        width: 100%;
     }
 
     .flex-service {
@@ -48,15 +50,19 @@
     }
 
     .section-title {
-        font-size: 2.5em;
+        font-size: 2.2rem;
     }
 
     .service-card {
         width: 40%;
         margin-bottom: 3em;
+        font-size: 1rem;
+
+        &__title {
+            font-size: 1.1rem;
+        }
     }
     
-
     .team-section__container {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -70,4 +76,270 @@
     .footer-nav {
         width: 75%;
     }
+}
+
+@media  screen and (max-width: 960px) {
+
+    .flex-mail {
+        padding-bottom: 3%;
+    }
+
+}
+
+@media  screen and (max-width: 840px) {
+
+     .nav {
+        &__item{
+            font-size: 1em;
+        }
+     }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        width: 45%;
+        margin-bottom: 3em;
+        font-size: 1rem;
+
+        &__title {
+            font-size: 1rem;
+        }
+        
+        &__text {
+            font-size: 1rem;
+        }
+    }
+
+    .graph{
+
+        &__title {
+            font-size: 1.8rem;
+            padding-bottom: 0.5em;
+        }
+        
+        &__text{
+            font-size: 1rem;
+        } 
+
+        &__btn {
+            font-size: 0.8rem;
+        }
+    }
+
+    .team-card {
+
+        &__title {
+            font-size: 1rem;
+        }
+    }
+
+    .footer-nav {
+        width: 100%;
+    }
+
+}
+
+@media  screen and (max-width: 570px) {
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    .btn-mail {
+        font-size: 0.8rem;
+    }
+    
+    .btn-soumission {
+        font-size: 0.9rem;
+    }
+
+    .flex-mail {
+        width: 67%;
+    }
+
+    .section-text {
+        font-size: 3rem;
+    }
+
+    .service-card {
+        width: 68%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5em;
+        justify-content: center;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin: 0 auto;
+    
+        &__item-1{
+            grid-row: 1/3;
+            grid-column: 1/4;
+        }
+    
+        &__item-2{
+            grid-row: 3/5;
+            grid-column: 1/6;  
+        }
+    
+        &__item-3 {
+            grid-row: 2/3;
+            grid-column: 4/6;   
+        }
+    
+        &__item-4 {
+            grid-row: 5/7;
+            grid-column: 1/6;  
+        }
+    
+        &__item-5{
+            grid-row: 7/8;
+            grid-column: 1/4;   
+        }
+    
+        &__item-6{
+            grid-row: 7/10;
+            grid-column: 4/6;
+        }
+        
+    }
+
+    .graph {
+        flex-direction: column;
+
+        &__img {
+            padding-top: 7%;
+        }
+
+        &__title {
+            padding-top: 1em;
+        }
+
+        &__right{
+            width: 90%;
+            padding-bottom: 7%;
+        }
+    }
+
+    .team-section__container {
+        flex-direction: column;
+        align-items: center;
+
+        .team-card {
+            width: 60%;
+        }
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        width: 80%;
+
+        &__items {
+            padding-bottom: 0.5em;
+        }
+    }
+
+    .map-section__iframe {
+        position: static !important;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .form {
+        position: static !important;
+        margin-top: 1em; 
+        width: 68% !important;
+        margin: 0 auto;
+    }
+}
+
+@media  screen and (max-width: 360px) {
+    .nav {
+    
+        &__item{
+            display: flex;
+            flex-direction: column;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .flex-mail {
+        width: 100%;
+    }
+
+    .btn-soumission {
+        font-size: 0.8rem;
+
+    }
+
+    .flex-btn-letter {
+        flex-direction: column;
+    }
+
+    .btn-mail {
+        font-size: 0.7em;
+        margin-top: 5%;
+    }
+
+    .section-text {
+        font-size: 2.3rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .service-card {
+        width: 100%;
+
+        &__text {
+            font-size: 0.8rem;
+        }
+    }
+
+    .graph {
+        &__img{
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        &__text {
+            font-size: 0.9rem;
+        }
+    }
+
+    .team-section__container {
+
+        .team-card {
+            width: 97%;
+        }
+    }
+
+        form[class="form"] {
+            position: static !important;
+            margin-top: 1em !important;
+            width: 100% !important;
+        }
+
+        .footer-nav {
+            padding-top: 5%;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .credits {
+            flex-direction: column;
+            padding-top: 5%;
+        }
 }

@@ -10,7 +10,7 @@
 
 //Website sections
 @use 'header' as *;
-@use 'cards-section' as *;
+@use 'services-cards' as *;
 @use 'grid' as *;
 @use 'graph-section' as *;
 @use 'team-cards' as *;
@@ -21,7 +21,7 @@
 //Carousel
 
 .carousel{
-    padding-top: 5%;
+    padding: 5% 3% 3% 3%;
 
     &__img {
         width: 100%;
@@ -30,8 +30,8 @@
 
 //map
 .map-section__iframe {
-    padding-top: 5em;
-    padding-bottom: 1.5em;
+    padding-top: 8%;
+    padding-bottom: 1%;
     width: 100%;
     position: absolute;
 }

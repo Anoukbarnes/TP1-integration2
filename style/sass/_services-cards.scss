@@ -1,16 +1,17 @@
 @use 'colors' as *;
 @use 'mixins' as *;
+@use 'variables' as *;
 
 
 .section-title {
     text-align: center;
-    font-size: 3rem;
-    padding: 5% 0;
+    font-size: 2.7rem;
+    padding: 5% 0 2% 0;
 }
 
 .section-text {
     text-align: center;
-    font-size: 8rem;
+    font-size: 7.5rem;
 }
 
 .flex-service {
@@ -19,7 +20,7 @@
 }
 
 %icons {
-    width: 25%;
+    width: $width;
     padding: 0.5em;
     border: 2px solid $color-primary;
     border-right: 5px solid $color-primary;
@@ -29,7 +30,7 @@
 
 
 .service-card {
-    @include card (2em, 23%);
+    @include card (2em, 25%);
 
     &__title{
         padding-top: 3%;

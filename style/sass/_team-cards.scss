@@ -6,12 +6,13 @@
 .team-section__container {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0;
 }
 
 .team-card {
     @include card (1em, 20%);
+    width: 22%;
 
     &__img {
         width: 50%;
