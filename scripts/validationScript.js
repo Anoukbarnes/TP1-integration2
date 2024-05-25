@@ -1,58 +1,76 @@
 const form = document.getElementById('form');
-const firstName = document.getElementById('first-name');
-const lastName = document.getElementById('last-name');
+const firstname = document.getElementById('first-name'); 
+const lastname = document.getElementById('last-name');
 const email = document.getElementById('email');
 
 
 
-//Show input error message 
-function showError(input, message) {
-    const inputControl = input.parentElement;
-    inputControl.classList.add('error');
-    const errorMessage = inputControl.querySelector('.errorMessage');
-    errorMessage.innerText = message;
-    console.log(message);
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    if (validateInputs()) {
+        // Si la validation est réussie, soumettre le formulaire
+        form.submit();
+    }
+});
+
+
+
+//Fonction qui va valider notre formulaire 
+const validateInputs = () => {
+    console.log("début");
+    let noError = true;
+    const firstnameValue = firstname.value.trim();
+    const lastnameValue = firstname.value.trim();
+    const emailValue = email.value.trim();
+
+
+    if (firstnameValue === '') {
+        setError(firstname, 'Veuillez entrer votre prénom');
+        noError = false;
+    } else {
+        setSuccess(firstname);
+    }
+
+    if (lastnameValue === '') {
+        setError(lastname, 'Veuillez entrer votre nom');
+        noError = false;
+    } else {
+        setSuccess(lastname);
+    }
+
+    if (!checkEmail(emailValue)) {
+        setError(email, 'Veuillez entrer une adresse courriel valide');
+        noError = false;
+    } else {
+        setSuccess(email);
+    }
+
+    console.log("fin");
+
+    return noError
 }
 
-//Show success outline
-function showSuccess(input) {
-    const inputControl = input.parentElement;
-    inputControl.classList.remove('error');
-    inputControl.classList.add('success');
-    const errorMessage = inputControl.querySelector('.errorMessage');
-    errorMessage.innerText = '';
-}
-
-
+//Check if email is valid
 function checkEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
 
+const setError = (input, message) => {
+    const inputControl = input.parentElement;
+    const errorDisplay = inputControl.querySelector('.errorMessage');
 
-//Event Listeners
-form.addEventListener('submit', function(e){
-    e.preventDefault();
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');
+}
 
-    if(firstName.value === '') {
-        showError(firstName, 'Veillez entrer un prénom')
-    } else {
-        showSuccess(firstName);
-    }
+const setSuccess = input => {
+    const inputControl = input.parentElement;
+    const errorDisplay = inputControl.querySelector('.errorMessage');
 
-    if(lastName.value === '') {
-        showError(lastName, 'Veillez entrer un nom')
-    } else {
-        showSuccess(lastName);
-    }
-
-
-    if (!checkEmail(email.value)) {
-        showError(email, 'Veuillez entrer un courriel valide');
-    } else {
-        showSuccess(email);
-    }
-
-});
-
+    errorDisplay.innerText = '';
+    inputControl.classList.remove('error');
+    inputControl.classList.add('success');
+}
 
