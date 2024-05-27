@@ -40,11 +40,13 @@
 .form {
     position: relative;
     margin-top: 15%;
-    background-color: $bg-form;
     padding: 2em;
-    border-radius: 5%;
+    border: 2px solid $color-primary;
+    border-right: 5px solid $color-primary;
+    border-bottom: 5px solid $color-primary;
+    border-radius: 8%;
     width: 40%;
-    border: solid 3px $color-secondary;
+    background-color: #a5a5df;
 
     &__flex {
         display: flex;
