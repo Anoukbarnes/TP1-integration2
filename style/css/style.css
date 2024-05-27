@@ -1,7 +1,7 @@
 .service-card, .team-card {
   display: flex;
   flex-direction: column;
-  background-color: #efede9;
+  background-color: #fff;
   border: 1px solid #000000;
   border-right: 8px solid #000000;
   border-bottom: 8px solid #000000;
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1300px;
 }
 
 .link {
