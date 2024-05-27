@@ -1,3 +1,32 @@
+.service-card, .team-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-right: 8px solid #000000;
+  border-bottom: 8px solid #000000;
+  border-radius: 5%;
+  justify-content: space-between;
+}
+
+.form__btn, .graph__btn, .btn-mail, .btn-soumission {
+  text-decoration: none;
+  color: #000000;
+  background-color: #f3827c;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 8px;
+}
+
+.service-card__icon-yellow, .service-card__icon-green, .service-card__icon-purple {
+  width: 25%;
+  padding: 0.5em;
+  border: 2px solid #000000;
+  border-right: 5px solid #000000;
+  border-bottom: 5px solid #000000;
+  border-radius: 8%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -54,13 +83,7 @@ Text meant only for screen readers. */
 }
 
 .btn-mail {
-  text-decoration: none;
-  color: #000000;
-  background-color: #f3827c;
   padding: 1em;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  border-radius: 8px;
   font-size: 0.9rem;
   margin-left: 3%;
 }
@@ -71,13 +94,7 @@ Text meant only for screen readers. */
 }
 
 .btn-soumission {
-  text-decoration: none;
-  color: #000000;
-  background-color: #f3827c;
   padding: 1em;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  border-radius: 8px;
   font-size: 1.1rem;
 }
 
@@ -144,26 +161,9 @@ header {
   justify-content: space-around;
 }
 
-.service-card__icon-purple, .service-card__icon-green, .service-card__icon-yellow {
-  width: 25%;
-  padding: 0.5em;
-  border: 2px solid #000000;
-  border-right: 5px solid #000000;
-  border-bottom: 5px solid #000000;
-  border-radius: 8%;
-}
-
 .service-card {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  border: 1px solid #000000;
-  border-right: 8px solid #000000;
-  border-bottom: 8px solid #000000;
-  border-radius: 5%;
   padding: 2em;
   width: 25%;
-  justify-content: space-between;
 }
 .service-card__title {
   padding-top: 3%;
@@ -252,13 +252,7 @@ header {
   font-size: 20px;
 }
 .graph__btn {
-  text-decoration: none;
-  color: #000000;
-  background-color: #f3827c;
   padding: 1em;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  border-radius: 8px;
   font-size: 1rem;
 }
 
@@ -270,16 +264,8 @@ header {
 }
 
 .team-card {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  border: 1px solid #000000;
-  border-right: 8px solid #000000;
-  border-bottom: 8px solid #000000;
-  border-radius: 5%;
   padding: 1em;
   width: 20%;
-  justify-content: space-between;
   width: 22%;
 }
 .team-card__img {
@@ -660,13 +646,7 @@ header {
   color: #ff3860;
 }
 .form__btn {
-  text-decoration: none;
-  color: #000000;
-  background-color: #f3827c;
   padding: 1.1em;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  border-radius: 8px;
   font-size: 0.9rem;
   margin-top: 6%;
   width: 100%;

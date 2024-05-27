@@ -1,6 +1,7 @@
 @use 'colors' as *;
 @use 'mixins' as *;
 @use 'variables' as *;
+@use 'extends' as *;
 
 
 .section-title {
@@ -18,16 +19,6 @@
     display: flex;
     justify-content: space-around;
 }
-
-%icons {
-    width: $width;
-    padding: 0.5em;
-    border: 2px solid $color-primary;
-    border-right: 5px solid $color-primary;
-    border-bottom: 5px solid $color-primary;
-    border-radius: 8%;
-}
-
 
 .service-card {
     @include card (2em, 25%);

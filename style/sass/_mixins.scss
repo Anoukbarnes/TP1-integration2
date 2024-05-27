@@ -1,26 +1,16 @@
 @use 'colors' as *;
 @use 'variables' as *;
+@use 'extends' as *;
 
 @mixin card($padding-card, $width) {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid $color-primary;
-    border-right: 8px solid $color-primary;
-    border-bottom: 8px solid $color-primary;
-    border-radius: 5%;
+    @extend %cards;
     padding: $padding-card;
     width: $width;
-    justify-content: space-between;
+    
 }
 
 @mixin buttons($padding-btn, $font-size) {
-    text-decoration: none;
-    color: $color-primary;
-    background-color: $color-secondary;
+    @extend %button;
     padding: $padding-btn;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    border-radius: 8px;
     font-size: $font-size;
 }
