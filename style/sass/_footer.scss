@@ -1,7 +1,7 @@
 @use 'colors' as *;
 
 //Footer
-.footer-img {
+.nav-img {
     display: flex;
     margin: 0 auto;
     padding: 10% 0 5% 0;
@@ -15,14 +15,8 @@
 
     &__items {
         display: inline-block;
-    }
-
-    &__btn {
-        text-decoration: none;
-        color: $color-primary;
-    
         &:hover {
-            color: grey;
+            color: $hover-color;
         }
     }
 }

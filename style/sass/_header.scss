@@ -24,6 +24,7 @@ header {
         display: inline-block;
         margin: 0 0.7em;
         font-size: 1.2em;
+        
 
         &--active {
                 color: $color-secondary;    
@@ -35,7 +36,7 @@ header {
     color: $color-primary;
 
         &:hover {
-            color: grey;
+            color: $hover-color;
         }
 
     }

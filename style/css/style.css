@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5 {
   max-width: 1400px;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*Main content link Accessibility
 
 Text meant only for screen readers. */
@@ -62,7 +67,7 @@ Text meant only for screen readers. */
 .btn-mail__input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
-  padding: 3% 30% 5% 0;
+  padding: 3% 24% 4% 2%;
 }
 
 .btn-soumission {
@@ -294,7 +299,7 @@ header {
   justify-content: center;
 }
 
-.footer-img {
+.nav-img {
   display: flex;
   margin: 0 auto;
   padding: 10% 0 5% 0;
@@ -309,11 +314,7 @@ header {
 .footer-nav__items {
   display: inline-block;
 }
-.footer-nav__btn {
-  text-decoration: none;
-  color: #000000;
-}
-.footer-nav__btn:hover {
+.footer-nav__items:hover {
   color: grey;
 }
 
