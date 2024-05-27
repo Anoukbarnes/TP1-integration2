@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5 {
   color: inherit;
 }
 
+.confirmation {
+  padding-top: 10%;
+}
+
 /*Main content link Accessibility
 
 Text meant only for screen readers. */
