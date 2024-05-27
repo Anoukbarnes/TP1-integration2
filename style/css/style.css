@@ -1,7 +1,7 @@
 .service-card, .team-card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #efede9;
   border: 1px solid #000000;
   border-right: 8px solid #000000;
   border-bottom: 8px solid #000000;
@@ -88,7 +88,7 @@ Text meant only for screen readers. */
   margin-left: 3%;
 }
 .btn-mail__input {
-  border: 2px solid #f0f0f0;
+  border: 2px solid #efede9;
   border-radius: 4px;
   padding: 3% 24% 4% 2%;
 }
