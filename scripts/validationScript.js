@@ -18,7 +18,7 @@ const validateInputs = () => {
     console.log("début");
     let noError = true;
     const firstnameValue = firstname.value.trim();
-    const lastnameValue = firstname.value.trim();
+    const lastnameValue = lastname.value.trim();
     const emailValue = email.value.trim();
 
 
@@ -36,7 +36,10 @@ const validateInputs = () => {
         setSuccess(lastname);
     }
 
-    if (!checkEmail(emailValue)) {
+    if (emailValue === ''){
+        setError(email, 'Veuillez entrer votre courriel')
+        noError = false;
+    } else if (!checkEmail(emailValue)) {
         setError(email, 'Veuillez entrer une adresse courriel valide');
         noError = false;
     } else {
