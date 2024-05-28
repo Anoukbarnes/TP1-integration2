@@ -1,9 +1,3 @@
-@use 'colors' as *;
-
-.background-grid {
-    background-color: $bg-grid;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(11, 1fr);

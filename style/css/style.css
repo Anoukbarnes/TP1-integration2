@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 
-.form__btn, .graph__btn, .btn-mail, .btn-soumission {
+.form__btn, .graph__btn, .flex-letter__btn, .btn-soumission {
   text-decoration: none;
   color: #000000;
   background-color: #f3827c;
@@ -72,12 +72,6 @@ Text meant only for screen readers. */
   word-wrap: normal !important;
 }
 
-.flex-btn-letter {
-  display: flex;
-  align-items: center;
-  width: 35%;
-}
-
 .flex-mail {
   display: flex;
   width: 90%;
@@ -86,20 +80,36 @@ Text meant only for screen readers. */
   flex-wrap: wrap;
 }
 
-.btn-mail {
+.flex-letter {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+.flex-letter__input {
+  border: 2px solid #efede9;
+  border-radius: 4px;
+  padding: 2% 6% 1% 2%;
+}
+.flex-letter__label {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 50%;
+}
+.flex-letter__btn {
   padding: 1em;
   font-size: 0.9rem;
   margin-left: 3%;
 }
-.btn-mail__input {
-  border: 2px solid #efede9;
-  border-radius: 4px;
-  padding: 3% 24% 4% 2%;
+.flex-letter__btn:hover {
+  color: grey;
 }
 
 .btn-soumission {
   padding: 1em;
   font-size: 1.1rem;
+}
+.btn-soumission:hover {
+  color: grey;
 }
 
 .flex-buttons {
@@ -187,10 +197,6 @@ header {
   background-color: #d585ec;
 }
 
-.background-grid {
-  background-color: #5b5b5b;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -263,6 +269,9 @@ header {
   padding: 1em;
   font-size: 1rem;
 }
+.graph__btn:hover {
+  color: grey;
+}
 
 .team-section__container {
   list-style-type: none;
@@ -304,11 +313,16 @@ header {
   justify-content: space-between;
   width: 60%;
   margin: 0 auto;
+  text-decoration: none;
 }
 .footer-nav__items {
   display: inline-block;
 }
-.footer-nav__items:hover {
+.footer-nav__btn {
+  text-decoration: none;
+  color: #000000;
+}
+.footer-nav__btn:hover {
   color: grey;
 }
 
@@ -619,7 +633,7 @@ header {
   border-bottom: 5px solid #000000;
   border-radius: 8%;
   width: 40%;
-  background-color: #a5a5df;
+  background-color: #bcbcde;
 }
 .form__flex {
   display: flex;
@@ -660,4 +674,7 @@ header {
   font-size: 0.9rem;
   margin-top: 6%;
   width: 100%;
+}
+.form__btn:hover {
+  color: grey;
 }

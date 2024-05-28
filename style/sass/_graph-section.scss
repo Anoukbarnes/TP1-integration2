@@ -40,5 +40,8 @@
 
     &__btn {
         @include buttons (1em, 1rem);
+        &:hover {
+            color: $hover-color;
+        }
     }
 }

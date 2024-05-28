@@ -10,17 +10,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/7116a37cd7.js" crossorigin="anonymous"></script>
-  
+
 </head>
 
-<body class="poppins-medium">
+<body>
 
 <header>
     <h1><a href="#section-1" role="button"><img class="logo-img" src="img/polarka-logo.png" alt="logo"></a></h1>
@@ -28,9 +30,9 @@
     <nav class="nav">
         <div id="nav__long">
             <ul>
-                <li class="nav__item nav__item--active"><a class="nav-btn link" href="#service-section" >Nos services</a></li>
-                <li class="nav__item"><a class="nav__btn link" href="#partner-section" >Nos partenaires</a></li>
-                <li class="nav__item"><a class="nav__btn link" href="#stats-section " >Statistiques</a></li>
+                <li class="nav__item nav__item--active"><a class="nav-btn link" href="#service-section">Nos services</a>
+                </li>
+                <li class="nav__item"><a class="nav__btn link" href="#stats-section">Statistiques</a></li>
                 <li class="nav__item"><a class="nav__btn link" href="#map-section">Nous joindre</a></li>
             </ul>
         </div>
@@ -38,81 +40,95 @@
         <div id="nav__hamburger">
             <i class="fa-solid fa-bars fa-2xl"></i>
         </div>
-        
+
     </nav>
 </header>
-<hr>
+
 
 <main id="content">
 
     <div class="container carousel" id="section-1">
-        <img class= "carousel__img" src="img/banniere.jpg" alt="Image pièce intérieur ordinateur">
+        <img class="carousel__img" src="img/banniere.jpg" alt="Image pièce intérieur ordinateur">
     </div>
 
-        <section class="container flex-buttons">
-            <div class="flex-mail">
-                <h4>S'abonner à l'infolettre</h4>
-                <div class="flex-btn-letter">
-                    <input class="btn-mail__input" type="email" id="email-newsletter" name="email" placeholder="xyz@mail.com">
-                    <a class="btn-mail" href="#" role="button"> Je m'abonne</a>
-                </div>
+    <div class="container flex-buttons">
+        <div class="flex-mail">
+            <div class="flex-letter">
+                <label class="flex-letter__label">S'abonner à l'infolettre</label>
+                <input class="flex-letter__input" type="email" id="email-newsletter" name="email"
+                       placeholder="xyz@mail.com">
+                <a class="flex-letter__btn" href="#" role="button"> Je m'abonne</a>
             </div>
-            <div class="flex-buttons">
-                <a class="btn-soumission" href="#" role="button">Demander une soumission</a>
-            </div> 
-        </section>
-   
+        </div>
+        <div class="flex-buttons">
+            <a class="btn-soumission" href="#" role="button">Demander une soumission</a>
+        </div>
+    </div>
 
-        <section class="container" id="service-section">
-            <div>
-                <p class="section-text">Façonner l'avenir du travail en exploitant la puissance des données et de l'IA.</p>
+
+    <section class="container" id="service-section">
+        <div>
+            <p class="section-text">Façonner l'avenir du travail en exploitant la puissance des données et de l'IA.</p>
+        </div>
+        <h2 class="section-title">Nos services</h2>
+
+        <div class="flex-service container">
+            <div class="service-card">
+                <img class="service-card__icon-yellow" src="img/architecture.png"
+                     alt="icone d'un écran d'ordinateur et engrenage">
+                <h3 class="service-card__title">Insights Data</h3>
+                <p class="service-card__text">Nos experts en architecture de données développent des outils d'analyse
+                    avancés et de visualisation moderne pour vous permettre de prendre des décisions basées sur les
+                    données et d'influencer le comportement des parties prenantes.</p>
             </div>
-            <h2 class="section-title">Nos services</h2>
 
-            <div class="flex-service container">
-                <div class="service-card">
-                    <img class="service-card__icon-yellow" src="img/architecture.png" alt="icone d'un écran d'ordinateur et engrenage">
-                    <h3 class="service-card__title">Insights Data</h3>
-                    <p class="service-card__text">Nos experts en architecture de données développent des outils d'analyse avancés et de visualisation moderne pour vous permettre de prendre des décisions basées sur les données et d'influencer le comportement des parties prenantes.</p>
-                </div>
-
-                <div class="service-card">
-                    <img class="service-card__icon-green" src="img/ingenerie.png" alt="icone d'un engrenage">
-                    <h3 class="service-card__title">Transformation cloud complète</h3>
-                    <p class="service-card__text">Nous migrons les données, les applications et l'infrastructure des entreprises médias vers Google Cloud, accélérant ainsi leur modernisation et ouvrant la voie à une croissance future.</p>
-                </div>
-
-                <div class="service-card">
-                    <img class="service-card__icon-purple" src="img/serveur-cloud.png" alt="icone d'un nuage qui représente le stockage cloud">
-                    <h3 class="service-card__title">Moteurs de recherche amplifiés par l'IA</h3>
-                    <p class="service-card__text">Polarka transforme la récupération et l'analyse de documents, tâche auparavant manuelle et frustrante, en un processus rationalisé et évolutif grâce à l'intelligence artificielle générative.</p>
-                </div>
+            <div class="service-card">
+                <img class="service-card__icon-green" src="img/ingenerie.png" alt="icone d'un engrenage">
+                <h3 class="service-card__title">Transformation cloud complète</h3>
+                <p class="service-card__text">Nous migrons les données, les applications et l'infrastructure des
+                    entreprises médias vers Google Cloud, accélérant ainsi leur modernisation et ouvrant la voie à une
+                    croissance future.</p>
             </div>
-        </section>
-    
 
-    <div id="partner-section" class="background-grid">
+            <div class="service-card">
+                <img class="service-card__icon-purple" src="img/serveur-cloud.png"
+                     alt="icone d'un nuage qui représente le stockage cloud">
+                <h3 class="service-card__title">Moteurs de recherche amplifiés par l'IA</h3>
+                <p class="service-card__text">Polarka transforme la récupération et l'analyse de documents, tâche
+                    auparavant manuelle et frustrante, en un processus rationalisé et évolutif grâce à l'intelligence
+                    artificielle générative.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="partner-section">
 
         <div class="container grid">
-            <img class="grid__item-1 grid__img" src="img/grid-1.jpg" alt="Image d'un écran d'ordinateur avec code informatique ">
-            <img class="grid__item-2 grid__img" src="img/grid-2.jpg" alt="Image fils d'une salle de serveurs informatiques">
+            <img class="grid__item-1 grid__img" src="img/grid-1.jpg"
+                 alt="Image d'un écran d'ordinateur avec code informatique ">
+            <img class="grid__item-2 grid__img" src="img/grid-2.jpg"
+                 alt="Image fils d'une salle de serveurs informatiques">
             <img class="grid__item-3 grid__img" src="img/grid-3.jpg" alt="Image salle de serveurs informatiques">
             <img class="grid__item-4 grid__img" src="img/gird-4.jpg" alt="Image d'une fenêtre avec le mot data">
             <img class="grid__item-5 grid__img" src="img/grid-5.jpg" alt="Image d'un graphique">
             <img class="grid__item-6 grid__img" src="img/grid-6.jpg" alt="Image d'un vieil ordinateur">
-          
+
         </div>
-    
+
     </div>
+
 
     <section id="stats-section">
         <div class="container graph">
             <div class="graph__container">
-                <img class= "graph__img" alt="graphique circulaire des services" src="img/graph.png">
+                <img class="graph__img" alt="graphique circulaire des services" src="img/graph.png">
             </div>
             <div class="graph__right">
                 <h2 class="graph__title">Des résultats qui parlent d'eux même</h2>
-                <p class="graph__text"> Fort de plus de 20 ans d'expérience et de centaines de projets de transformation réussis auprès de nos clients, nous vous aidons à tracer votre voie vers une entreprise habilitée par l'IA.</p>
+                <p class="graph__text"> Fort de plus de 20 ans d'expérience et de centaines de projets de transformation
+                    réussis auprès de nos clients, nous vous aidons à tracer votre voie vers une entreprise habilitée
+                    par l'IA.</p>
                 <a class="graph__btn" href="#" role="button"> J'en apprend davantage</a>
             </div>
         </div>
@@ -121,95 +137,104 @@
     <section id="team-section" class="container">
 
         <h2 class="section-title"> Notre équipe</h2>
-            <ul class="container team-section__container">
-                <li class="team-card">
-                    <div class="img-center">
-                        <img class="team-card__img" src="img/team-1.jpg" alt="Photo d'un membre de l'équipe">
-                    </div>
-                    <h4 class="team-card__title">Louis-Philippe Kyer</h4>
+        <ul class="container team-section__container">
+            <li class="team-card">
+                <div class="img-center">
+                    <img class="team-card__img" src="img/team-1.jpg" alt="Photo d'un membre de l'équipe">
+                </div>
+                <h4 class="team-card__title">Louis-Philippe Kyer</h4>
+                <p class="team-card__role">Co-fondateur</p>
+                <p class="team-card__text">Passionné par l'innovation technologique, Louis-Philippe dirige la vision
+                    technologique de l'entreprise et développe des solutions innovantes.</p>
+                <div>
+                    <a class="link" href="#"><i class="link fa-brands fa-facebook"></i></a>
+                    <a class="link" href="#"><i class="link fa-brands fa-instagram"></i></a>
+                    <a class="link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </li>
+
+            <li class="team-card">
+                <div class="img-center">
+                    <img class="team-card__img" src="img/team-2.jpeg" alt="Photo d'un membre de l'équipe">
+                </div>
+                <div>
+                    <h4 class="team-card__title">Steven Armede</h4>
                     <p class="team-card__role">Co-fondateur</p>
-                    <p class="team-card__text">Passionné par l'innovation technologique, Louis-Philippe dirige la vision technologique de l'entreprise et développe des solutions innovantes.</p>
+                    <p class="team-card__text">Geek assumé, Steven est un expert en satisfaction client et s'engage à
+                        offrir une expérience exceptionnelle à chaque interaction.</p>
                     <div>
                         <a class="link" href="#"><i class="link fa-brands fa-facebook"></i></a>
-                        <a class="link" href="#"><i class="link fa-brands fa-instagram" ></i></a>
+                        <a class="link" href="#"><i class="link fa-brands fa-instagram"></i></a>
                         <a class="link" href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li class="team-card">
-                    <div class="img-center">
-                        <img class="team-card__img" src="img/team-2.jpeg" alt="Photo d'un membre de l'équipe">
-                    </div>
-                    <div>
-                        <h4 class="team-card__title">Steven Armede</h4>
-                        <p class="team-card__role">Co-fondateur</p>
-                        <p class="team-card__text">Geek assumé, Steven est un expert en satisfaction client et s'engage à offrir une expérience exceptionnelle à chaque interaction.</p>
-                        <div>
-                            <a class="link" href="#"><i class="link fa-brands fa-facebook"></i></a>
-                            <a class="link" href="#"><i class="link fa-brands fa-instagram" ></i></a>
-                            <a class="link" href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </li>
+            <li class="team-card">
+                <div class="img-center">
+                    <img class="team-card__img" src="img/team-3.png" alt="Photo d'un membre de l'équipe">
+                </div>
+                <h4 class="team-card__title">Karl Ginola</h4>
+                <p class="team-card__role">Lead Cloud</p>
+                <p class="team-card__text">Karl est un leader chevronné en infrastructure cloud, assurant la fiabilité
+                    et la performance des opérations cloud de l'entreprise.</p>
+                <div>
+                    <a class="link" href="#"><i class="link fa-brands fa-facebook"></i></a>
+                    <a class="link" href="#"><i class="link fa-brands fa-instagram"></i></a>
+                    <a class="link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </li>
 
-                <li class="team-card">
-                    <div class="img-center">
-                        <img class="team-card__img" src="img/team-3.png" alt="Photo d'un membre de l'équipe">
-                    </div>
-                    <h4 class="team-card__title">Karl Ginola</h4>
-                    <p class="team-card__role">Lead Cloud</p>
-                    <p class="team-card__text">Karl est un leader chevronné en infrastructure cloud, assurant la fiabilité et la performance des opérations cloud de l'entreprise.</p>
-                    <div>
-                        <a class="link" href="#"><i class="link fa-brands fa-facebook"></i></a>
-                        <a class="link" href="#"><i class="link fa-brands fa-instagram" ></i></a>
-                        <a class="link" href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </li>
-
-                <li class="team-card">
-                    <div class="img-center">
-                        <img class="team-card__img" src="img/team-4.png" alt="Photo d'un membre de l'équipe">
-                    </div>
-                    <h4 class="team-card__title"> Brenda Rivera</h4>
-                    <p class="team-card__role">Lead Data et IA</p>
-                    <p class="team-card__text">Brenda est une experte en analyse de données et en intelligence artificielle, utilisant les données et l'IA pour optimiser les processus et stimuler la croissance de l'entreprise.</p>
-                    <div class="card-icon">
-                        <a class="link" href="#"><i class="link fa-brands fa-facebook"></i></a>
-                        <a class="link" href="#"><i class="link fa-brands fa-instagram" ></i></a>
-                        <a class="link" href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </li>
-            </ul>
+            <li class="team-card">
+                <div class="img-center">
+                    <img class="team-card__img" src="img/team-4.png" alt="Photo d'un membre de l'équipe">
+                </div>
+                <h4 class="team-card__title"> Brenda Rivera</h4>
+                <p class="team-card__role">Lead Data et IA</p>
+                <p class="team-card__text">Brenda est une experte en analyse de données et en intelligence artificielle,
+                    utilisant les données et l'IA pour optimiser les processus et stimuler la croissance de
+                    l'entreprise.</p>
+                <div class="card-icon">
+                    <a class="link" href="#"><i class="link fa-brands fa-facebook"></i></a>
+                    <a class="link" href="#"><i class="link fa-brands fa-instagram"></i></a>
+                    <a class="link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </li>
+        </ul>
     </section>
 
+
     <div id="map-section">
-        <iframe class="map-section__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.0081089331047!2d-73.57525796110733!3d45.54999929276892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bfc289ec2fd%3A0xa7740a80a53c0b9a!2s3163%20Rue%20Masson%2C%20Montr%C3%A9al%2C%20QC%20H1Y%201Y2!5e0!3m2!1sfr!2sca!4v1714949199122!5m2!1sfr!2sca" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map-section__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.0081089331047!2d-73.57525796110733!3d45.54999929276892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bfc289ec2fd%3A0xa7740a80a53c0b9a!2s3163%20Rue%20Masson%2C%20Montr%C3%A9al%2C%20QC%20H1Y%201Y2!5e0!3m2!1sfr!2sca!4v1714949199122!5m2!1sfr!2sca"
+                width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="container form__flex">
         <form id="form" class="form" action="confirmation.html">
-                <div class="input-control">
-                    <label class= "form__label" for="first-name">Votre prénom: <span class="form__span">*</span></label>
-                    <input class= "form__input" type="text" id="first-name" name="first-name" placeholder="Prénom">
-                    <div class="errorMessage"></div>
-                </div>
-                <div class="input-control">
-                    <label class= "form__label" for="last-name">Votre nom: <span class="form__span">*</span></label>
-                    <input class= "form__input" type="text" id="last-name" name="last-name" placeholder="Nom">
-                    <div class="errorMessage"></div>
-                </div>
-                <div class="input-control">
-                    <label class= "form__label" for="email">Votre courriel <span class="form__span">*</span></label>
-                    <input class= "form__input" type="text" id="email" name="email" placeholder="xyz@mail.com">
-                    <div class="errorMessage"></div>
-                </div>
-                <div class="input-control"> 
-                    <label class= "form__label" for="txt-info">Informations sur vos besoins:</label>
-                    <textarea class= "form__input" id="txt-info" name="txt-info" placeholder="Message"></textarea>
-                </div>
-                <div>
-                    <input class="form__btn" type="submit" value="Envoyer le formulaire">
-                </div>
+            <div class="input-control">
+                <label class="form__label" for="first-name">Votre prénom: <span class="form__span">*</span></label>
+                <input class="form__input" type="text" id="first-name" name="first-name" placeholder="Prénom">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label class="form__label" for="last-name">Votre nom: <span class="form__span">*</span></label>
+                <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Nom">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label class="form__label" for="email">Votre courriel <span class="form__span">*</span></label>
+                <input class="form__input" type="text" id="email" name="email" placeholder="xyz@mail.com">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label class="form__label" for="txt-info">Informations sur vos besoins:</label>
+                <textarea class="form__input" id="txt-info" name="txt-info" placeholder="Message"></textarea>
+            </div>
+            <div>
+                <input class="form__btn" type="submit" value="Envoyer le formulaire">
+            </div>
         </form>
     </div>
 
@@ -222,31 +247,33 @@
 
     <div>
         <ul class="footer-nav">
-            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>À propos</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Nos prix</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Carrières</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>FAQs</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Conditions d'utilisation</li>
-            <li class="footer-nav__items"><a class="footer__btn" href="#" role="button"></a>Accessibilité</li>
+            <li class="footer-nav__items"><a class="footer-nav__btn" href="#">À propos</a></li>
+            <li class="footer-nav__items"><a class="footer-nav__btn" href="#" >Nos prix</a></li>
+            <li class="footer-nav__items"><a class="footer-nav__btn" href="#" >Carrières</a></li>
+            <li class="footer-nav__items"><a class="footer-nav__btn" href="#" >FAQs</a></li>
+            <li class="footer-nav__items"><a class="footer-nav__btn" href="#" >Conditions d'utilisation
+            </a></li>
+            <li class="footer-nav__items"><a class="footer-nav__btn" href="#" role="button">Accessibilité</a></li>
         </ul>
     </div>
 
     <div class="credits">
         <p>Fait par: Anouk Barnes</p>
         <div class="footer__socials">
-            <a class=link href="#"><i class="fa-brands fa-fw fa-facebook" ></i></a>
+            <a class=link href="#"><i class="fa-brands fa-fw fa-facebook"></i></a>
             <a class=link href="#"><i class="fa-brands fa-fw fa-instagram"></i></a>
             <a class=link href="#"><i class="fa-brands fa-fw fa-linkedin"></i></a>
             <a class=link href="#"><i class="fa-brands fa-fw fa-twitter"></i></a>
         </div>
         <div class="credits__info">
             <span><a class=link href="tel:514-997-0916"><i class="fa-solid fa-fw fa-phone"></i></a>
-            </span><p>514-997-0916</p><span>
+            </span>
+            <p>514-997-0916</p><span>
             <a class=link href="mailto:anouk@mail.com"><i class="fa-solid fa-fw fa-envelope"></i></a></span>
         </div>
     </div>
 
 </footer>
-    <script src="scripts/validationScript.js"></script>
+<script src="scripts/validationScript.js"></script>
 </body>
 </html>
