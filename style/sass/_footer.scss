@@ -12,14 +12,21 @@
     justify-content: space-between;
     width: 60%;
     margin: 0 auto;
+    text-decoration: none;
 
     &__items {
         display: inline-block;
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: $color-primary;
         &:hover {
             color: $hover-color;
         }
     }
 }
+
 
 .credits {
     display: flex;

@@ -3,12 +3,7 @@
 @use 'variables' as *;
 
 
-//btn infolettre
-.flex-btn-letter {
-    display: flex;
-    align-items: center;
-    width: 35%;
-}
+
 //btn-mail
 .flex-mail {
     display: flex;
@@ -18,20 +13,40 @@
     flex-wrap: wrap;
 }
 
-.btn-mail {
-    @include buttons (1em, 0.9rem);
-    margin-left: 3%;
+
+.flex-letter {
+    display: flex;
+    align-items: center;
+    width: 75%;
 
     &__input {
         border: 2px solid $bgcolor-cards;
         border-radius: 4px;
-        padding: 3% 24% 4% 2%;
+        padding: 2% 6% 1% 2%;
+    }
+
+    &__label {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 50%;
+    }
+
+    &__btn{
+        @include buttons (1em, 0.9rem);
+        margin-left: 3%;  
+        &:hover {
+            color: $hover-color;
+        }  
     }
 }
 
 //btn soumission
 .btn-soumission {
     @include buttons (1em, 1.1rem);
+    
+    &:hover {
+        color: $hover-color;
+    }
 }
 
 //Buttons 
